@@ -1,0 +1,145 @@
+/*Overriding layui*/
+
+.login-box .layui-tab {
+    margin: 0;
+}
+
+.login-box .layui-tab-title li {
+    width: 180px;
+    padding: 0;
+    line-height: 48px;
+    color: #666666;
+    font-size: 16px;
+}
+
+.login-box .layui-tab-title .layui-this {
+    color: #43cf76;
+    font-size: 16px;
+}
+
+.login-box .layui-tab-title .layui-this:after {
+    height: 48px;
+}
+
+.login-box .layui-tab-content {
+    padding-top: 40px;
+    padding-bottom: 0;
+    height: 260px;
+    background: #ffffff;
+}
+
+.login-box .layui-input {
+    width: 300px;
+    height: 40px;
+}
+
+.login-box .layui-form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+.login-box .layui-form-item {
+    margin-bottom: 30px;
+}
+
+
+.login-box .layui-form-label {
+    font-size: 16px;
+    color: #666666;
+    width: 100px;
+}
+
+
+/*login-box*/
+
+.login-box {
+    width: 360px;
+    height: 350px;
+}
+
+.login-phone {
+    height: 36px;
+    width: 300px;
+    border: 1px solid #cccccc;
+    background: url("../../images/user.png") no-repeat 10px 7px;
+    left: 20px;
+    position: relative;
+}
+
+.login-password {
+    height: 36px;
+    width: 300px;
+    margin-top: 24px;
+    border: 1px solid #cccccc;
+    background: url("../../images/lock.png") no-repeat 10px 7px;
+    left: 20px;
+    position: relative;
+}
+
+.login-button {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.login-checkBox {
+    color: #666666;
+    float: left;
+    width: 300px;
+    height: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    line-height: 20px;
+    position: relative;
+}
+
+.login-input {
+    height: 36px;
+    width: 240px;
+    border: none;
+    position: relative;
+    left: 32px;
+}
+
+.login-button button {
+    width: 300px;
+    height: 40px;
+    background-color: #f5ab42;
+    color: #ffffff;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+.login-extraBtn {
+    width: 300px;
+    height: 20px;
+    position: relative;
+}
+
+.weixin-login-box {
+    margin: 0 auto;
+}
+
+.quickDelete-icon {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("../../images/close.png") no-repeat;
+    top: 10px;
+    right: 6px;
+    display: none;
+}
+
+.show-password-icon {
+    position: absolute;
+    width: 16px;
+    height: 9px;
+    background: url("../../images/eyes.png") no-repeat;
+    top: 14px;
+    right: 6px;
+    display: none;
+}
+
+#weixinError {
+    color: #ff0000;
+}

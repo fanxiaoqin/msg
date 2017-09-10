@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>笔试题库-面试官</title>
+    <link rel="stylesheet" type="text/css" href="static/assets/css/video.css">
+
+    <link rel="stylesheet" type="text/css" href="static/CSS/style-index.css">
+   <style>
+        .level {
+            width: 50%;
+            margin: 4em auto;
+        }
+		.main-quiz-holder {
+		    margin: 8em auto;
+		    position: relative;
+		    background: #424B4F;
+		    border: 1px solid #3A4144;
+		    border-radius: 20px 2px 20px 2px;
+		    position: relative;
+		    width: 700px;
+		}
+
+.main-quiz-holder * {
+    margin: 0;
+    padding: 0;
+    font-family: "Microsoft yahei", sans-serif;
+}
+
+.main-quiz-holder a {
+    text-decoration: none;
+    color: #6C6C6C;
+}
+
+.main-quiz-holder .slide-container {
+    width: 600px;
+    padding: 20px 50px 50pt 50px;
+	color:#EDEDED;
+}
+
+.results-container,
+.intro-container {
+    text-align: center;
+}
+
+.results-container {}
+
+.main-quiz-holder .slide-container .question,
+.main-quiz-holder h2.qTitle {
+    margin: 10px 0 20px 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+.main-quiz-holder h2.qTitle {
+    font-size: 20px;
+    margin-top: 30px;
+    line-height: 26px
+}
+
+.main-quiz-holder .question-number {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid #F6F6F6;
+    padding: 5px;
+    background: #F0F0F0;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    color: #949494;
+}
+
+.main-quiz-holder .slide-container ul.answers {
+    margin: 0px;
+    padding: 5px;
+    list-style: none;
+}
+
+.main-quiz-holder .slide-container ul.answers li {
+    cursor: pointer;
+    padding: 5px 30px;
+    margin: 12px 0;
+    color: #4c4c4c;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    background: #f6f6f6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#d4d4d4));
+    background: -webkit-linear-gradient(#f6f6f6, #d4d4d4);
+    background-image: -moz-linear-gradient(top, #f6f6f6, #d4d4d4);
+    background-image: -moz-gradient(top, #f6f6f6, #d4d4d4);
+    border: 1px solid #a1a1a1;
+}
+
+.main-quiz-holder .slide-container ul.answers li.selected {
+    background: #6fb2e5;
+    box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
+    -o-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
+    -webkit-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
+    -moz-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
+}
+
+.main-quiz-holder .slide-container .prev,
+.main-quiz-holder .slide-container .next {
+    height: 19px;
+    cursor: pointer;
+   
+    font-size: 14px;
+    color: #4c4c4c;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    background: #6fb2e5;
+    box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
+    -o-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
+    -webkit-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
+    -moz-box-shadow: 0 1px 5px #0061aa, inset 0 10px 20px #b6f9ff;
+}
+
+.main-quiz-holder .slide-container .next {
+    background: #77d125;
+    box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6;
+    -o-box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6;
+    -webkit-box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6;
+    -moz-box-shadow: 0 1px 5px #3caa00, inset 0 10px 20px #c9ffb6;
+}
+
+.main-quiz-holder .progress-keeper {
+    width: 553px;
+    margin: 0px 12px;
+    box-shadow: 0 1px 5px #D9D9D9, inset 0 10px 20px #F1F1F1;
+    -o-box-shadow: 0 1px 5px #D9D9D9, inset 0 10px 20px #F1F1F1;
+    -webkit-box-shadow: 0 1px 5px #D9D9D9, inset 0 10px 20px #F1F1F1;
+    -moz-box-shadow: 0 1px 5px #D9D9D9, inset 0 10px 20px #F1F1F1;
+    border-radius: 2px;
+    border: 1px solid #dedede;
+    margin: 0px auto 20px auto;
+}
+
+.main-quiz-holder .progress {
+    width: 0;
+    height: 10px;
+    color: #4c4c4c;
+    background: #f6f6f6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f6f6f6), to(#d4d4d4));
+    background: -webkit-linear-gradient(#f6f6f6, #d4d4d4);
+    background-image: -moz-linear-gradient(top, #f6f6f6, #d4d4d4);
+    background-image: -moz-gradient(top, #f6f6f6, #d4d4d4);
+}
+
+.main-quiz-holder .result-keeper {
+    margin: 10px;
+    text-align: center;
+}
+
+.main-quiz-holder .notice {
+    margin-top: -30px;
+    color: #717171;
+    position: absolute;
+    right: 52px;
+    bottom: 70px;
+}
+
+.main-quiz-holder .slide-container .prev {
+    width: 70px;
+    float: left;
+}
+
+.main-quiz-holder .slide-container .next,
+.main-quiz-holder .slide-container .final {
+    width: 70px;
+    float: right;
+}
+
+.main-quiz-holder .slide-container .final {
+    width: 65px;
+}
+
+.main-quiz-holder .nav-previous {}
+
+.main-quiz-holder .nav-next {}
+
+.main-quiz-holder .nav-show-result {
+    padding-left: 25px;
+    background: url(/static/assets/img/confirm.png) left no-repeat;
+}
+
+.main-quiz-holder .nav-start {
+    display: block;
+    margin: 40px auto 0 auto;
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: bold
+}
+
+.main-quiz-holder .nav-container {
+    padding: 5px;
+    margin: 15px 0;
+}
+
+.main-quiz-holder .result-row {
+    width: 80px;
+    margin: 10px 20px;
+    float: left;
+    position: relative;
+}
+
+.main-quiz-holder .result-row .resultsview-qhover {
+    background: #FCFCFC;
+    border: 1px solid #dedede;
+    box-shadow: 0 1px 5px #D9D9D9, inset 0 10px 20px #F1F1F1;
+    -o-box-shadow: 0 1px 5px #D9D9D9, inset 0 10px 20px #F1F1F1;
+    -webkit-box-shadow: 0 1px 5px #D9D9D9, inset 0 10px 20px #F1F1F1;
+    -moz-box-shadow: 0 1px 5px #D9D9D9, inset 0 10px 20px #F1F1F1;
+    border-radius: 2px 10px 2px 10px;
+    position: absolute;
+    width: 250px;
+    top: 50px;
+    left: -80px;
+    z-index: 200;
+    padding: 15px 30px;
+    text-align: left;
+    font-size: 22px;
+}
+
+.main-quiz-holder .resultsview-qhover ul {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.main-quiz-holder .resultsview-qhover li {
+    padding: 0 28px;
+    margin: 5px 0;
+    min-height: 20px;
+    font-size: 14px;
+    background: #FCFCFC;
+    border: 1px solid #F6F6F6;
+    border-radius: 3px;
+}
+
+.main-quiz-holder .resultsview-qhover li.selected {}
+
+.main-quiz-holder .resultsview-qhover li.right {}
+
+.main-quiz-holder .correct,
+.main-quiz-holder .wrong {
+    height: 25px;
+    cursor: pointer;
+    padding: 5px ;
+    font-size: 14px;
+    padding: 5px 15px;
+    color: #4c4c4c;
+    border-radius: 4px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+    -webkit-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2), inset 0 0 6px 0 rgba(255, 255, 255, 0.3), 0 1px 2px rgba(0, 0, 0, 0.4);
+}
+
+.main-quiz-holder .correct {
+    background: #c3e462;
+    background: -webkit-gradient(linear, left top, left bottom, from(#c3e462), to(#90b61e));
+    background: -webkit-linear-gradient(#c3e462, #90b61e);
+    background-image: -moz-linear-gradient(top, #c3e462, #90b61e);
+    background-image: -moz-gradient(top, #c3e462, #90b61e);
+    border: 1px solid #bfff00;
+}
+
+.main-quiz-holder .wrong {
+    background: #fc5e5e;
+    background: -webkit-gradient(linear, left top, left bottom, from(#fc5e5e), to(#ea4646));
+    background: -webkit-linear-gradient(#fc5e5e, #ea4646);
+    background-image: -moz-linear-gradient(top, #fc5e5e, #ea4646);
+    background-image: -moz-gradient(top, #fc5e5e, #ea4646);
+    border: 1px solid #e36d6d;
+}
+
+.main-quiz-holder .correct span {
+    padding: 0 10px;
+    background: url(/static/assets/img/confirm.png) 6px 2px no-repeat;
+}
+
+.main-quiz-holder .wrong span {
+    padding: 0 10px;
+    background: url(/static/assets/img/delete.png) 6px 2px no-repeat;
+    color: #474747;
+}
+
+.main-quiz-holder .question {
+    padding-left: 5px;
+    line-height: 1.3em;
+}
+
+.main-quiz-holder .share-button {
+    display: block;
+    margin: 15px 0;
+}
+
+.jquizzy-clear {
+    clear: both;
+}
+
+.main-quiz-holder .right {
+    float: none;
+}
+
+.main-quiz-holder img {
+    border: none;
+}
+		
+		
+		
+    </style>
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="100" rlt="1">
+     <div class="header__box">
+        <div class="header">
+            <div class="header__inneer">
+                <h1 class="logo">
+                    <a href="/" class="logo__link">MSG</a>
+                </h1>
+				 
+                <nav class="nav" id="js_nav">
+				<div class="fold__menu__box">
+                        <a href="/face" class="fold__menu has__sub_nav " id="js_fold_menu" >面对面</a>
+                        <div class="fold__menu__items hide" style="display: none;">
+                            <a href="/use">使用指南</a>
+                        </div>
+						<a href="/video" class="fold__menu ">视频模拟</a>
+                    <a href="/tbank" class="fold__menu" style="color:#06B1D1">题库</a>
+                    <a href="/resume" class="fold__menu">简历制作<div class="icon__new"><img src="static/images/icon_new_blue.svg"></div></a>
+                    <a href="/shequ-1" class="fold__menu">社区交流</a>
+                    </div>
+                    
+                </nav>
+                <div class="login__gruop">
+                    <div class="login__box btn btn__border-gradient">
+                        <span>
+                                <a href="/logi">登录</a> 
+                                <a href="/sign">注册</a>
+                            </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+
+    <div role="main" class="main">
+	   <p><h3 style="margin:1em 0 1em 0">{{.knowledgepoint}}测试</h3></p>
+        <button type="button" style="width:200px;height:50px;border-radius:5px;background:#00A0E9;" onclick="Single()"><a style="color:white">单项选择题</a></button>
+		<button type="button" style="width:200px;height:50px;border-radius:5px;background:#00A0E9;" onclick="Mult()"><a href="" style="color:white">多项选择题</a></button>
+		<button type="button" style="width:200px;height:50px;border-radius:5px;background:#00A0E9;" onclick="Opera()"><a href="" style="color:white">简答题</a></button>
+		<button type="button" style="width:200px;height:50px;border-radius:5px;background:#00A0E9;" onclick="Pro()"><a href="" style="color:white">操作题</a></button>
+		<div id='quiz-container' style="display:none;"></div>
+		<div id="mult" style="display:none;"></div>
+		<div id="ope" style="display:none;" >
+		<form class="am-form" style="margin:4em;width:60%;" id="opera" >
+                        
+                    </form>
+					 <div class="list-page" id="list-nav" style="margin-left:3em"></div>
+					 <div id="msg"></div>
+		</div>
+					
+					
+	   <div id="zxbc" style="display:none;">
+					<form class="am-form" style="margin:4em;width:60%;border-style:none" id="bc"  >
+                        
+                    </form>
+					 <div class="list-page" id="list-nav1" style="margin-left:3em"></div>
+					 <div id="msg"></div>
+		</div>
+    </div>
+	
+	  
+   
+
+     {{template "tpl-footer.html" .}}
+    <script src="static/assets/js/audioPlayer.js"></script>
+  
+    <script src="static/JS/jquery.min.js"></script>
+   <script type="text/javascript" src="/static/assets/js/quiz.js"></script>
+<script type="text/javascript" src="/static/assets/js/layer/layer.js"></script>
+    <script type="text/javascript" src="/static/assets/js/laypage/laypage.js"></script>
+	<script>
+	 $(function(){
+		var knowledgepoint={{.knowledgepoint}}
+	});
+	
+	</script>
+    <script>
+	
+	 function Single(){
+		document.getElementById("quiz-container").style.display="block"
+		document.getElementById("mult").style.display="none"
+		document.getElementById("ope").style.display="none"
+		document.getElementById("zxbc").style.display="none"
+	 $(function() {
+		
+        $.post('/getpage', {
+			
+            questiontype:'sxz',
+			knowledgepoint:{{.knowledgepoint}}  
+        }, function(data) {
+			console.log(data)
+            $('#quiz-container').jquizzy({
+               data: data.message.data
+            });
+			
+    
+           
+        }, 'json');
+        });
+		}
+	</script>
+	<script>
+	function Mult(){
+		document.getElementById("quiz-container").style.display="none"
+		document.getElementById("mult").style.display="block"
+		document.getElementById("ope").style.display="none"
+		document.getElementById("zxbc").style.display="none"
+	 $(function() {
+        document.onkeydown = function(event) {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+			console.log(e)
+            if (e && e.keyCode == 13) {
+                search();
+            }
+        };
+        init(1, 1);
+    });
+	function search() {
+        init(1, 1);
+    }
+	   
+	 function init(pi, ps){
+        $.post('/getpages', {
+			pi: pi,
+            ps: ps,
+            questiontype:'mxz',
+			knowledgepoint:{{.knowledgepoint}}  
+        }, function(data) {
+			console.log(data)
+            if (data.status ==2) {
+                var arrCtn = [];
+                $.each(data.message.data, function(index, el) {
+					arrCtn.push('<div class="am-form-group">'+el.questioncontent+' </div>')
+					arrCtn.push('<fieldset>')
+					arrCtn.push('<div class="am-checkbox"><label> <input type="checkbox"><xmp>'+el.optiona+' </xmp></label></div>')
+					arrCtn.push('<div class="am-checkbox"><label> <input type="checkbox"><xmp>'+el.optionb+' </xmp></label></div>')
+					arrCtn.push('<div class="am-checkbox"><label> <input type="checkbox"><xmp>'+el.optionc+' </xmp></label></div>')
+					arrCtn.push('<div class="am-checkbox"><label> <input type="checkbox"><xmp>'+el.optiond+' </xmp></label></div>')
+                    arrCtn.push('<div class=am-cf>')
+					arrCtn.push('<p><button type="button" class="am-btn am-btn-default " onclick="answer()">答案</button>')
+					arrCtn.push('<button type="submit" class="am-btn am-btn-default am-fr">提交</button></p>')
+					arrCtn.push('</div>')
+					arrCtn.push('<div id="answer"><a>'+el.rightanswer+'</a></div>')
+					arrCtn.push('</fieldset>')      
+                });
+                $('#mult').html(arrCtn.join(''));	
+				console.log(data.message.count )		
+                 laypage({
+                    cont: $('#list-nav'),
+                    pages: Math.ceil(data.message.count/ps),
+                    curr: pi || 1,
+                    skip: true,
+                    jump: function(obj, first) {
+                        if (!first) {
+                            init(obj.curr, ps);
+                        }
+                    }
+                });
+            } else {
+                $('#container').html('未查询到数据');
+            }
+        }, 'json');
+        }
+		}
+	</script>
+	<script>
+	function answer(){
+		document.getElementById("answer").style.display="block"
+	}
+	 function Opera(){
+		document.getElementById("quiz-container").style.display="none"
+		document.getElementById("mult").style.display="none"
+		document.getElementById("ope").style.display="block"
+		document.getElementById("zxbc").style.display="none"
+	 $(function() {
+        document.onkeydown = function(event) {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+			console.log(e)
+            if (e && e.keyCode == 13) {
+                search();
+            }
+        };
+        init(1, 1);
+    });
+	function search() {
+        init(1, 1);
+    }
+	 function init(pi, ps){
+        $.post('/getpages', {
+			pi: pi,
+            ps: ps,
+            questiontype:'cz',
+			knowledgepoint:{{.knowledgepoint}}  
+        }, function(data) {
+            if (data.status ==2) {
+				console.log(data)
+                var arrCtn = [];
+                $.each(data.message.data, function(index, el) {
+					arrCtn.push('<div >'+el.questioncontent+'</div>')
+					arrCtn.push('<fieldset style="border:none">')
+					arrCtn.push(' <div "> <textarea style="width:100%;height:100px" ></textarea> </div>')
+					 arrCtn.push('<div >')
+					arrCtn.push('<p><button type="button" onclick="answer()" style="float:left">答案</button>')
+					arrCtn.push('<button type="submit" style="float:right" >提交</button></p>')
+					
+					arrCtn.push('</div>')
+					arrCtn.push('<div id="answer" style="display:none"><a>'+el.rightanswer+'</a></div>')
+                    arrCtn.push('</fieldset>')
+                });
+                $('#opera').html(arrCtn.join(''));	
+				console.log(data.message.count )		
+                 laypage({
+                    cont: $('#list-nav'),
+                    pages: Math.ceil(data.message.count/ps),
+                    curr: pi || 1,
+                    skip: true,
+                    jump: function(obj, first) {
+                        if (!first) {
+                            init(obj.curr, ps);
+                        }
+                    }
+                });
+            } else {
+                $('#opera').html('未查询到数据');
+            }
+        }, 'json');
+        }
+		}
+
+	
+	function Pro(){
+		document.getElementById("quiz-container").style.display="none"
+		document.getElementById("mult").style.display="none"
+		document.getElementById("ope").style.display="none"
+		document.getElementById("zxbc").style.display="block"
+	 $(function() {
+        document.onkeydown = function(event) {
+            var e = event || window.event || arguments.callee.caller.arguments[0];
+			console.log(e)
+            if (e && e.keyCode == 13) {
+                search();
+            }
+        };
+        init(1, 1);
+    });
+	function search() {
+        init(1, 1);
+    }
+	 function init(pi, ps){
+        $.post('/getpages', {
+			pi: pi,
+            ps: ps,
+            questiontype:'bc',
+			knowledgepoint:{{.knowledgepoint}}  
+        }, function(data) {
+			console.log(data)
+            if (data.status ==2) {
+				
+                var arrCtn = [];
+                $.each(data.message.data, function(index, el) {
+				
+					arrCtn.push('<div >'+el.questioncontent+'</div>')
+					arrCtn.push('<fieldset>')
+					
+					arrCtn.push('<a href="http://tool.lu/coderunner/" ><button type="button" class="am-btn am-btn-dqefault am-fl" >在线测试</button></a>')
+					
+					
+                    arrCtn.push('</fieldset>')
+					
+					
+					
+                });
+                $('#bc').html(arrCtn.join(''));	
+						
+                 laypage({
+                    cont: $('#list-nav1'),
+                    pages: Math.ceil(data.message.count/ps),
+                    curr: pi || 1,
+                    skip: true,
+                    jump: function(obj, first) {
+                        if (!first) {
+                            init(obj.curr, ps);
+                        }
+                    }
+                });
+            } else {
+                $('#bc').html('未查询到数据');
+            }
+        }, 'json');
+        }
+		}
+	</script>
+	
+
+</body>
+	
+</html>

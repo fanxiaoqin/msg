@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<!-- saved from url=(0058)http://www.jiaobu365.com/Resume/resume/res_id/3045681.html -->
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <link rel="stylesheet" href="/static/source/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/source/zxbj_base.css">
+    <link rel="stylesheet" href="/static/source/style.css">
+
+    <script type="text/javascript" src="/static/source/jquery-1.8.0.js"></script>
+    <script type="text/javascript" src="/static/source/jquery.ui.js"></script>
+    <script type="text/javascript" src="/static/source/bootstrap.r.min.js"></script>
+    <script type="text/javascript" src="/static/source/resume.js"></script>
+    <script type="text/javascript" src="/static/source/jquery.bigcolorpicker.js"></script>
+    <script type="text/javascript" src="/static/source/Sortable.min.js"></script>
+    <script type="text/javascript" src="/static/source/jquery.nicescroll.js"></script>
+    <script type="text/javascript" src="/static/source/layer.js"></script>
+    <link rel="stylesheet" href="/static/source/layer.css" id="layui_layer_skinlayercss">
+    <script type="text/javascript" src="/static/source/commons.js"></script>
+    <link href="/static/source/resume_2.css" rel="stylesheet" type="text/css">
+	<script>
+	function exportToWord(controlId) {            
+            var control = document.getElementById(controlId);            
+            try {
+
+                var fileName = SaveName; //文件名
+
+                var areaRes = document.getElementById(tbName); //指定要输入区域
+
+                var wordObj = new ActiveXObject("Word.Application"); //指定输出类型
+
+                var docObj = wordObj.Documents.Add("", 0, 1);
+
+                var oRange = docObj.Range(0, 1);
+
+                var sel = document.body.createTextRange();
+
+                sel.moveToElementText(areaRes);
+
+                sel.select();
+
+                sel.execCommand("Copy");
+
+                oRange.Paste();
+
+                wordObj.Application.Visible = true;
+
+                var filePath = showDialog();
+
+                if (filePath) docObj.SaveAs(filePath);
+
+                function showDialog() {
+
+                    var dial = wordObj.FileDialog(2);
+
+                    return dial.show() == -1 ? dial.SelectedItems(1) : '';
+
+                }
+
+            } catch (e) {
+
+                print("Nested catch caught " + e);
+
+            }
+        }
+	</script> 
+    <style id="poshytip-css-tips-black" type="text/css">
+        div.tips-black {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        
+        div.tips-black table.tip-table,
+        div.tips-black table.tip-table td {
+            margin: 0;
+            font-family: inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            font-style: inherit;
+            font-variant: inherit;
+            vertical-align: middle;
+        }
+        
+        div.tips-black td.tip-bg-image span {
+            display: block;
+            font: 1px/1px sans-serif;
+            height: 10px;
+            width: 10px;
+            overflow: hidden;
+        }
+        
+        div.tips-black td.tip-right {
+            background-position: 100% 0;
+        }
+        
+        div.tips-black td.tip-bottom {
+            background-position: 100% 100%;
+        }
+        
+        div.tips-black td.tip-left {
+            background-position: 0 100%;
+        }
+        
+        div.tips-black div.tip-inner {
+            background-position: -10px -10px;
+        }
+        
+        div.tips-black div.tip-arrow {
+            visibility: hidden;
+            position: absolute;
+            overflow: hidden;
+            font: 1px/1px sans-serif;
+        }
+    </style>
+    <style type="text/css" id="resume_focus_style">
+        .resume_focus:after {
+            position: absolute;
+            border: 1px dashed rgb(146, 163, 178);
+            content: "";
+            width: 134px;
+            height: 14px;
+            top: -11px;
+            left: -3px;
+        }
+		.ah{
+			font-size:20px;
+			text-align:center;
+			line-height:20px;
+			
+		}
+    </style>
+</head>
+
+<body bgcolor="#e7ecf0" class="">
+ 
+<div style="text-align:center">
+  <input type="button" value="导出到WORD" onclick="return exportToWord('TestDiv')" />     </div>
+    
+
+
+    <div class="edit-maincont">
+
+
+
+        <div class="baseStyle clearfix jm0203_j1" id="resume_body" style="height: 3112px;">
+
+
+
+            <div class="divLeft clearfix" id="bar">
+			
+			<div class="resume-toolbar">
+		<div class="dropdown fontfamily">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="http://www.jiaobu365.com/Resume/resume/res_id/3045681.html#">
+             <span class="FontName">Arial</span> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+             <li><a href="javascript:;" data-cmd="FontName" class="editors" data-param="Arial">Arial</a></li>
+             <li><a href="javascript:;" data-cmd="FontName" class="editors" data-param="宋体">宋体</a></li>
+             <li><a href="javascript:;" data-cmd="FontName" class="editors" data-param="微软雅黑">微软雅黑</a></li>
+             <li><a href="javascript:;" data-cmd="FontName" class="editors" data-param="黑体">黑体</a></li>	             
+          </ul>
+        </div>
+		<div class="dropdown fontsize">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="http://www.jiaobu365.com/Resume/resume/res_id/3045681.html#">
+             <span class="FontSize">3</span> <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+             <li><a href="javascript:;" data-cmd="FontSize" class="editors" data-param="1">1</a></li>
+             <li><a href="javascript:;" data-cmd="FontSize" class="editors" data-param="2">2</a></li>
+             <li><a href="javascript:;" data-cmd="FontSize" class="editors" data-param="3">3</a></li>
+             <li><a href="javascript:;" data-cmd="FontSize" class="editors" data-param="4">4</a></li>
+             <li><a href="javascript:;" data-cmd="FontSize" class="editors" data-param="5">5</a></li>
+             <li><a href="javascript:;" data-cmd="FontSize" class="editors" data-param="6">6</a></li>
+             <li><a href="javascript:;" data-cmd="FontSize" class="editors" data-param="7">7</a></li>	         
+          </ul>
+        </div>
+		<div class="barbtn">
+			<a href="javascript:void(0);" data-cmd="Bold" class="editors"><span class="bold tipstool" title="加粗"></span></a>
+			<a href="javascript:void(0);" data-cmd="Italic" class="editors"><span class="italic tipstool" title="倾斜"></span></a>
+			<a href="javascript:void(0);" data-cmd="Underline" class="editors"><span class="underline tipstool" title="下划线"></span></a>
+			<a href="javascript:void(0);" class=""><span class="bgcolor tipstool qfontcolor" title="背景色">A</span></a>
+			<a href="javascript:void(0);"><span class="fontcolor tipstool qfontcolor" title="字体颜色"><em></em></span></a>
+			<a href="javascript:void(0);" data-cmd="JustifyLeft" class="editors mp"><span class="align-left tipstool" title="左对齐"></span></a>
+			<a href="javascript:void(0);" data-cmd="JustifyCenter" class="editors mp"><span class="align-center tipstool" title="居中对齐"></span></a>
+			<a href="javascript:void(0);" data-cmd="JustifyRight" class="editors mp"><span class="align-right tipstool" title="右对齐"></span></a>
+			<a href="javascript:void(0);" data-cmd="InsertUnorderedList" class="editors mp"><span class="list-ul tipstool" title="无序列表"></span></a>
+			<a href="javascript:void(0);" data-cmd="InsertOrderedList" class="editors mp"><span class="list-ol tipstool" title="有序列表"></span></a>
+			<a href="javascript:void(0);" data-cmd="RemoveFormat" class="editors mp"><span class="RemoveFormat tipstool" title="清除格式"></span></a>
+		</div>
+	</div>
+			
+			
+			
+			
+                <!--头像-->
+                <div class="headDiv" id="resume_is_avatar">
+                    <span class="headNotice" id="change_avatar">点击替换头像</span>
+                    <input type="hidden" id="small_avatar" value="">
+                    <img src="/static/source/userpic.png" id="update_avatar" class="resume_msg" for-key="avatar" for-type="src" width="100%" height="100%">
+                </div>
+                <div id="bar_sort"></div>
+                <!--基本信息-->
+                <div class="msgDiv positonDiv resume_add_area resume_sort" id="resume_msg">
+                    <ul class="editBtn">
+                        <li class="btnMove" style="cursor:move;" data-placement="top" title="拖动调整上下位置"></li>
+                        <li class="btnPlus resume_add" for-key="resume_msg" data-placement="bottom" title="添加一项"></li>
+                    </ul>
+                    <div class="baseAge baseMsg baseDel" id="resume_is_age">
+                        <div class="delete resume_hidden" for-id="resume_is_age" style="display: none;"></div>
+                        <a class=" icon wbdfont" for-id="age" style="font-size:none"></a>
+                        <input class="baseBorder resume_msg resume_lang_age" for-key="age" for-type="val" placeholder="年龄/生日" value="24岁" maxlength="10">
+                    </div>
+                    <div class="baseAddress baseMsg baseDel" id="resume_is_address">
+                        <div class="delete resume_hidden" for-id="resume_is_address" style="display: none;"></div>
+                        <a class=" icon wbdfont" for-id="address" style="font-size:none"></a>
+                        <input class="resume_msg baseBorder resume_lang_address" for-key="address" for-type="val" placeholder="联系地址" value="上海浦东" maxlength="25">
+                    </div>
+                    <div class="baseMobile baseMsg baseDel" id="resume_is_phone">
+                        <div class="delete resume_hidden" for-id="resume_is_phone" style="display: none;"></div>
+                        <a class=" icon wbdfont" for-id="phone" style="font-size:none"></a>
+                        <input class="resume_msg baseBorder resume_lang_mobile" for-key="phone" for-type="val" placeholder="联系电话" value="138xxxxxxxx" maxlength="20">
+                    </div>
+                    <div class="baseEmail baseMsg baseDel" id="resume_is_email">
+                        <div class="delete resume_hidden" for-id="resume_is_email"></div>
+                        <a class=" icon wbdfont" for-id="email" style="font-size:none"></a>
+                        <input class="resume_msg baseBorder resume_lang_email" for-key="email" for-type="val" placeholder="电子邮箱" value="xxxxxx@xx.com" maxlength="25">
+                    </div>
+                </div>
+                <div class="skillDiv baseItem positonDiv resume_add_area resume_graph resume_sort" id="resume_graph" draggable="false" style="display: none;">
+                    <ul class="editBtn" for-model="graph">
+                        <li class="btnMove" style="cursor:move;" data-placement="top" title="拖动调整上下位置"></li>
+                        <li class="btnPlus resume_add" for-key="resume_graph" data-placement="bottom" title="添加一项"></li>
+                        <li class="btnDel resume_hidden" for-id="resume_graph" data-placement="bottom" title="隐藏该模块"></li>
+                    </ul>
+
+                </div>
+                <div class="hobbyDiv positonDiv resume_add_area resume_icon resume_sort" id="resume_hobby">
+                    <ul class="editBtn" for-model="hobby">
+                        <li class="btnMove" style="cursor:move;" data-placement="top" title="拖动调整上下位置"></li>
+                        <li class="btnPlus resume_add" for-key="resume_icon" data-placement="bottom" title="添加一项"></li>
+                        <li class="btnDel resume_hidden" for-id="resume_icon" data-placement="bottom" title="隐藏该模块"></li>
+                    </ul>
+                    <dl class="clearfix">
+                        <dt><span><div class="resume_lang_hobby" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">兴趣爱好</div></span></dt>
+                        <dd class="resume_append_area" for-model="hobby">
+                            <div class="hobbyicon baseDel resume_delete_area resume_icon_item hobby_ hobby_0" for-id="1340258">
+                                <a class="hobby_msg icon wbdfont resume_icon_diy" for-key="hobby_val" for-type="html" style="font-size:none"></a>
+                                <span class="hobbyTitle"><input class="hobby_msg baseBorder" for-key="hobby_title" placeholder="兴趣爱好" value="篮球" maxlength="10"></span>
+                                <div class="delete resume_delete"></div>
+                            </div>
+                            <div class="hobbyicon baseDel resume_delete_area resume_icon_item hobby_ hobby_1" for-id="1340259">
+                                <a class="hobby_msg icon wbdfont resume_icon_diy" for-key="hobby_val" for-type="html" style="font-size:none"></a>
+                                <span class="hobbyTitle"><input class="hobby_msg baseBorder" for-key="hobby_title" placeholder="兴趣爱好" value="足球" maxlength="10"></span>
+                                <div class="delete resume_delete" style="display: none;"></div>
+                            </div>
+                            <div class="hobbyicon baseDel resume_delete_area resume_icon_item hobby_ hobby_2" for-id="1340260">
+                                <a class="hobby_msg icon wbdfont resume_icon_diy" for-key="hobby_val" for-type="html" style="font-size:none"></a>
+                                <span class="hobbyTitle"><input class="hobby_msg baseBorder" for-key="hobby_title" placeholder="兴趣爱好" value="音乐" maxlength="10"></span>
+                                <div class="delete resume_delete"></div>
+                            </div>
+                            <div class="hobbyicon baseDel resume_delete_area resume_icon_item hobby_ hobby_3" for-id="1340261">
+                                <a class="hobby_msg icon wbdfont resume_icon_diy" for-key="hobby_val" for-type="html" style="font-size:none"></a>
+                                <span class="hobbyTitle"><input class="hobby_msg baseBorder" for-key="hobby_title" placeholder="兴趣爱好" value="摄影" maxlength="10"></span>
+                                <div class="delete resume_delete"></div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="divRight clearfix resume_main" id="foo">
+                <!--姓名、求职意向-->
+                <div class="nameDiv positonDiv" id="resume_name">
+                    <h1>
+                        <div class="resume_msg baseBorder resume_notice resume_lang_name" for-key="user_name" for-type="html" contenteditable="true">Mystery</div>
+                    </h1>
+                    <h2>
+                        <div class="resume_msg baseBorder resume_notice resume_lang_job" for-key="objective" for-type="html" contenteditable="true">求职目标：web前端工程师</div>
+                    </h2>
+                </div>
+                <div id="foo_sort"></div>
+                <div class="eduDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice" notice-key="edu" id="resume_edu">
+                    <ul class="editBtn" for-model="education">
+                       
+                        <li class="btnPlus resume_add ah" for-key="resume_item" data-placement="bottom" title="添加一项">+</li>
+                        <li class="btnDel resume_hidden ah" for-id="resume_edu" data-placement="bottom" title="隐藏该模块">-</li>
+                    </ul>
+                    <dl>
+                        <dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="edu" style="font-size:none"></a>
+			<span><div class="resume_lang_edu" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">教育背景</div><div class="Border resume_line" for-id="edu"></div></span>
+		</dt>
+                        <dd class="resume_append_area" for-model="education">
+                            <div class="baseContent baseDel resume_item_items resume_delete_area education_ education_0" for-id="721112" style="border-color: transparent; border-width: 1px; border-style: dashed;">
+                                <div class="delete resume_delete" style="display: none; opacity: 0;"></div>
+                                <div class="conTitle">
+                                    <span class="conTitle_time"><div class="education_msg baseBorder" for-key="ed_time" contenteditable="true">2008.9-2012.7</div></span>
+                                    <span class="conTitle_company"><div class="education_msg baseBorder" for-key="ed_name" contenteditable="true">啦啦啦大学</div></span>
+                                    <span class="conTitle_post"><div class="education_msg baseBorder" for-key="ed_major" contenteditable="true">信息与计算科学（本科）</div></span>
+                                </div>
+                                <div class="baseDel_ resume_delete_area_">
+                                    <div class="delete_ resume_delete_"></div>
+                                    <div class="conDisc baseBorder baseDel education_msg" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本" for-key="ed_content">
+                                        <p>主修课程</p>
+                                        <p>数据结构、C语言、JAVA、数值分析、C++、广告学、公共关系学、大学英语、解析几何与线性代数、常微分方程、计算机应用等。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="cartDiv baseItem positonDiv resume_item resume_sort resume_notice" notice-key="cert" id="resume_skill" for-key="cart">
+                    <ul class="editBtn" for-model="skill">
+                         <li class="btnPlus resume_add ah" for-key="resume_item" data-placement="bottom" title="添加一项">+</li>
+                        <li class="btnDel resume_hidden ah" for-id="resume_edu" data-placement="bottom" title="隐藏该模块">-</li>
+                    </ul>
+                    <dl>
+                        <dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="cart" style="font-size:none"></a>
+			<span><div class="resume_lang_cart" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">技能证书</div><div class="Border resume_line" for-id="cart"></div></span>
+		</dt>
+                        <dd>
+                            <div class="baseContent">
+                                <div class="conDisc baseBorder resume_lang_cert_value skill_msg" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本" for-key="skill_content" for-id="664698">
+                                    <p>计算机高级证</p>
+                                    <p>品牌管理，市场营销</p>
+                                    <p>销售数据分析</p>
+                                    <p>广告创意策划</p>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="campusDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice" notice-key="campus" id="resume_campus">
+                    <ul class="editBtn" for-model="campus">
+                         <li class="btnPlus resume_add ah" for-key="resume_item" data-placement="bottom" title="添加一项">+</li>
+                        <li class="btnDel resume_hidden ah" for-id="resume_edu" data-placement="bottom" title="隐藏该模块">-</li>
+                    </ul>
+                    <dl>
+                        <dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="campus" style="font-size:none">+</a>
+			<span><div class="resume_lang_in_school" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">校内实践</div><div class="Border resume_line" for-id="campus"></div></span>
+		</dt>
+                        <dd class="resume_append_area" for-model="campus">
+                            <div class="baseContent baseDel resume_item_items resume_delete_area campus_ campus_0" for-id="680127" style="border-color: transparent; border-width: 1px; border-style: dashed;">
+                                <div class="delete resume_delete" style="display: none; opacity: 0;"></div>
+                                <div class="conTitle">
+                                    <span class="conTitle_time"><div class="campus_msg baseBorder" contenteditable="true" for-key="campus_time">2011.09-2013.06</div></span>
+                                    <span class="conTitle_company"><div class="campus_msg baseBorder" contenteditable="true" for-key="campus_name">啦啦啦大学</div></span>
+                                    <span class="conTitle_post"><div class="campus_msg baseBorder" contenteditable="true" for-key="campus_job">文化实习生</div></span>
+                                </div>
+                                <div class="baseDel_ resume_delete_area_">
+                                    <div class="delete_ resume_delete_"></div>
+                                    <div class="conDisc baseBorder campus_msg" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本" for-key="campus_content">
+                                        <p>即将参与产品开发，广告创意策划，市场分析，销售数据分析，与地区分公司，公关部门及广告公司协调广告概念等相关事宜。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="offcampusDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice" notice-key="offcampus" id="resume_offcampus">
+                    <ul class="editBtn" for-model="offcampus">
+                        <li class="btnPlus resume_add ah" for-key="resume_item" data-placement="bottom" title="添加一项">+</li>
+                        <li class="btnDel resume_hidden ah" for-id="resume_edu" data-placement="bottom" title="隐藏该模块">-</li>
+                    </ul>
+                    <dl>
+                        <dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="out_school" style="font-size:none"></a>
+			<span><div class="resume_lang_out_school" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">校外实践</div><div class="Border resume_line" for-id="out_school"></div></span>
+		</dt>
+                        <dd class="resume_append_area" for-model="offcampus">
+                            <div class="baseContent baseDel resume_item_items resume_delete_area offcampus_ offcampus_0" for-id="674115">
+                                <div class="delete resume_delete" style="display: none;"></div>
+                                <div class="conTitle">
+                                    <span class="conTitle_time"><div class="offcampus_msg baseBorder" contenteditable="true" for-key="offcampus_time">2009.09-2010.06</div></span>
+                                    <span class="conTitle_company"><div class="offcampus_msg baseBorder" contenteditable="true" for-key="offcampus_name"></div></span>
+                                    <span class="conTitle_post"><div class="offcampus_msg baseBorder" contenteditable="true" for-key="offcampus_job">文化实习生</div></span>
+                                </div>
+                                <div class="baseDel_ resume_delete_area_">
+                                    <div class="delete_ resume_delete_"></div>
+                                    <div class="conDisc baseBorder offcampus_msg" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本" for-key="offcampus_content">
+                                        <p>即将参与产品开发，广告创意策划，市场分析，销售数据分析，与地区分公司，公关部门及广告公司协调广告概念等相关事宜。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="workDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice" id="resume_work">
+                    <ul class="editBtn" for-model="work">
+                         <li class="btnPlus resume_add ah" for-key="resume_item" data-placement="bottom" title="添加一项">+</li>
+                        <li class="btnDel resume_hidden ah" for-id="resume_edu" data-placement="bottom" title="隐藏该模块">-</li>
+                    </ul>
+                    <dl>
+                        <dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="work" style="font-size:none"></a>
+			<span><div class="resume_lang_work" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">工作经历</div><div class="Border resume_line" for-id="work"></div></span>
+		</dt>
+                        <dd class="resume_append_area" for-model="work">
+                            <div class="baseContent baseDel resume_item_items resume_delete_area work_ work_0" for-id="742013" style="border-color: transparent; border-width: 1px; border-style: dashed;">
+                                <div class="delete resume_delete" style="display: none; opacity: 0;"></div>
+                                <div class="conTitle">
+                                    <span class="conTitle_time"><div class="work_msg baseBorder" contenteditable="true" for-key="work_time">2012.4-至今</div></span>
+                                    <span class="conTitle_company"><div class="work_msg baseBorder" contenteditable="true" for-key="work_name">脚步网信息科技有限公司</div></span>
+                                    <span class="conTitle_post"><div class="work_msg baseBorder" contenteditable="true" for-key="work_job">产品经理</div></span>
+                                </div>
+                                <div class="baseDel_ resume_delete_area_">
+                                    <div class="delete_ resume_delete_"></div>
+                                    <div class="conDisc baseBorder work_msg" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本" for-key="work_content">
+                                        <p>1、团队管理，电商产品管理，电子商务策划项目管理；</p>
+                                        <p>2、网站需求分析，产品设计，产品跟踪，及后续产品优化工作；</p>
+                                        <p>3、与研发、营销、客服配合，展开产品开发、销售、售后工作；</p>
+                                        <p>4、产品应用市场调研和分析；</p>
+                                        <p>5、公司品牌宣传，产品推广，负责公司网站策划和运营工作。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="itemDiv baseItem positonDiv resume_item resume_add_area resume_sort resume_notice" notice-key="item" id="resume_item">
+                    <ul class="editBtn" for-model="item">
+                        <li class="btnPlus resume_add ah" for-key="resume_item" data-placement="bottom" title="添加一项">+</li>
+                        <li class="btnDel resume_hidden ah" for-id="resume_edu" data-placement="bottom" title="隐藏该模块">-</li>
+                    </ul>
+                    <dl>
+                        <dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="project" style="font-size:none"></a>
+			<span><div class="resume_lang_project" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">项目经验</div><div class="Border resume_line" for-id="project"></div></span>
+		</dt>
+                        <dd class="resume_append_area" for-model="item">
+                            <div class="baseContent baseDel resume_item_items resume_delete_area item_ item_0" for-id="665967">
+                                <div class="delete resume_delete" style="display: none;"></div>
+                                <div class="conTitle">
+                                    <span class="conTitle_time"><div class="item_msg baseBorder" contenteditable="true" for-key="item_time">2011.09-2013.06</div></span>
+                                    <span class="conTitle_company"><div class="item_msg baseBorder" contenteditable="true" for-key="item_name">麦伦文化</div></span>
+                                    <span class="conTitle_post"><div class="item_msg baseBorder" contenteditable="true" for-key="item_title">文化实习生</div></span>
+                                </div>
+                                <div class="baseDel_ resume_delete_area_">
+                                    <div class="delete_ resume_delete_"></div>
+                                    <div class="conDisc baseBorder item_msg" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本" for-key="item_content">
+                                        <p>即将参与产品开发，广告创意策划，市场分析，销售数据分析，与地区分公司，公关部门及广告公司协调广告概念等相关事宜。</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="honorDiv baseItem positonDiv resume_item resume_sort resume_notice" notice-key="honor" id="resume_honor" for-key="honor">
+                    <ul class="editBtn" for-model="honor">
+                         <li class="btnPlus resume_add ah" for-key="resume_item" data-placement="bottom" title="添加一项">+</li>
+                        <li class="btnDel resume_hidden ah" for-id="resume_edu" data-placement="bottom" title="隐藏该模块">-</li>
+                    </ul>
+                    <dl>
+                        <dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="honor" style="font-size:none"></a>
+			<span><div class="resume_lang_honor" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">奖项荣誉</div><div class="Border resume_line" for-id="honor"></div></span>
+		</dt>
+                        <dd>
+                            <div class="baseContent">
+                                <div class="conDisc baseBorder resume_lang_honor_value honor_msg" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本" for-key="honor_content" for-id="651143">
+                                    <p>第一名</p>
+                                    <p>品牌管理，市场营销</p>
+                                    <p>销售数据分析</p>
+                                    <p>广告创意策划</p>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+                <div class="selfDiv baseItem positonDiv resume_item resume_sort resume_notice" notice-key="self" id="resume_self" for-key="self">
+                    <ul class="editBtn" for-model="self">
+                        <li class="btnMove" style="cursor:move;" data-placement="top" title="拖动调整上下位置"></li>
+                        <li class="btnPlus" data-placement="bottom" title="添加一项" style="display:none;"></li>
+                        <li class="btnDel resume_hidden" for-id="resume_self" data-placement="bottom" title="隐藏该模块"></li>
+                    </ul>
+                    <dl>
+                        <dt>
+			<a class="resume_icon_diy icon wbdfont" for-id="self" style="font-size:none"></a>
+			<span><div class="resume_lang_self" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本">自我评价</div><div class="Border resume_line" for-id="self"></div></span>
+		</dt>
+                        <dd>
+                            <div class="baseContent">
+                                <div class="conDisc baseBorder resume_lang_self_value self_msg" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本" for-key="self_content" for-id="688783">
+                                    <p>深度互联网从业人员，对互联网保持高度的敏感性和关注度，熟悉产品开发流程，有很强的产品规划、需求分析、交互设计能力，能独立承担APP和WEB项目的管控工作，善于沟通，贴近用户。衷情于互联网技术应用，在五年的工作经验当中，通过自身努力从软件开发工程师转型到产品经理，获得了不错的成绩；我正在寻找一个更好的发展平台，希望能够充分发挥自己的优势，共同努力成就一番事业。</p>
+                                </div>
+                            </div>
+                        </dd>
+                    </dl>
+                </div>
+
+            </div>
+            <div class="resumePageBreak" style="top: 1556px;"><span>该处分页请回车OR换行避开</span></div>
+        </div>
+        <!----封底--->
+    </div>
+    <div style="height:200px;"></div>
+
+    <!---------------------------------------------------------------------->
+    <div id="hidden_data">
+        <input type="hidden" class="resume_edu" value="1">
+        <input type="hidden" class="resume_work" value="1">
+        <input type="hidden" class="resume_skill" value="1">
+        <input type="hidden" class="resume_self" value="1">
+        <input type="hidden" class="resume_item" value="1">
+        <input type="hidden" class="resume_honor" value="1">
+        <input type="hidden" class="resume_campus" value="1">
+        <input type="hidden" class="resume_offcampus" value="1">
+        <input type="hidden" class="resume_temp_colour" value="jm0203_j1">
+        
+        <input type="hidden" class="resume_is_avatar" value="1">
+        <input type="hidden" class="resume_is_age" value="1">
+        <input type="hidden" class="resume_is_address" value="1">
+        <input type="hidden" class="resume_is_phone" value="1">
+        <input type="hidden" class="resume_is_email" value="1">
+        <input type="hidden" class="resume_lang" value="">
+        <!-----自定义模块内容--->
+        <!-------->
+        <!------个性模块内容------>
+        <input type="hidden" class="resume_graph" value="0"><input type="hidden" class="resume_hobby" value="1">
+        <!------------>
+    </div>
+    <input type="hidden" value="3045681" id="res_id">
+    <div style="height:200px;"></div>
+    <!---<ul class="rightbtn ctboxs">
+	<li>
+	<a href="javascript:void(0);" class="on" id="generate_resume" hre="" fil="0">生成<br>下载</a>
+	</li>
+    <li><a href="javascript:void(0);" id="change_resume_temp">更换<br>模板</a></li>
+    <li class="last"><a href="javascript:void(0);" id="save_resume">保存</a></li>
+</ul>--->
+
+
+    <!----生成简历弹框-->
+    <div class="modal-content none" id="resume_url_div">
+        <div class="jl-scjl-hd">
+            <div class="img"><img src="/static/source/5728020845bc4.jpg" width="90" height="128"></div>
+            <div class="text">
+                <div class="title"><input type="text" disabled="true" name="title" id="webresumeTitle" value="小步的简历"></div>
+                <p class="time">创建于2017-03-05 15:04:32 最后一次修改<span id="resume_update_time">2017-04-05 10:48:09</span></p>
+                <p class="mb-name">使用模板： <span>单色快双栏中文简历</span></p>
+            </div>
+        </div>
+        <div class="jl-scjl-bd">
+            <p class="name"><span>个性域名：</span>请为你的简历设置个性域名</p>
+            <div class="gxym_div">
+                <p><span><i>http://www.jiaobu365.com/resume/</i><input type="text" id="visitid" name="visitid" value="" issubmitflag="false" placeholder="请输入个性域名（纯英文）"><i>.html</i></span></p>
+            </div>
+        </div>
+        <div class="jl-btn"><a id="resume_url" href="javascript:void(0);">生成简历</a></div>
+    </div>
+
+    <!-----模板弹框----->
+    <style>
+        .resume-module-class {
+            box-shadow: none;
+            border-radius: none;
+            background: none;
+        }
+    </style>
+    <div class="modal fade myModalxzmb in" id="myModalxzmb" type="0">
+        <div class="xzmb-tool modal-dialog" role="document" id="resume_template">
+            <div class="xzmb-btn">加载中...</div>
+        </div>
+    </div>
+    <div class=" none model_text">
+        <div class="modal-content textModal">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel">插入文本框</h4>
+            </div>
+            <div class="modal-body clearfix">
+                <label>文本框中的文字：<textarea id="resumeInsertText" maxlength="176"></textarea></label>
+                <p>1. 插入后可通过文本框工具设置文本框的宽度、高度、线条、填充颜色等；</p>
+                <p>2. 点击插入后的文本框即可调出文本框工具。</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn" id="resumeInsertTextBtn">确定</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-content nrmkModal none model_div">
+        <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel">添加模块</h4>
+        </div>
+        <div class="modal-body clearfix">
+            <dl>
+                <dd>
+                    <div class="mkTitle">模块名称：<input class="resume_name" placeholder="兴趣爱好" id="custom_title"></div>
+                    <div class="mkText">
+                        <span class="mktime">时&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;间：<input class="resume_time" placeholder="不填不显示" id="custom_time"></span>
+                        <span class="mkcompany">单&nbsp;&nbsp;位：<input class="resume_unit" placeholder="不填不显示" id="custom_name"></span>
+                        <span class="mkjob">职&nbsp;&nbsp;位：<input class="resume_job" placeholder="不填不显示" id="custom_job"></span>
+                    </div>
+                    <div class="mkText clearfix">
+                        模块描述：
+                        <textarea class="resume_content" id="custom_content" placeholder="性格开朗热情，能够很好的处理人际关系,可以更好更快地适应新的环境;我善于观察，注意细节;严于律己，宽以待人是我的人生座右铭;乐于吃苦，埋头苦干是我做事的态度;勇于创新，不怕失败，永不输是朋友对我的评价;本人学习能力极强，喜欢专研，压力越大动力就越大。"></textarea>
+                    </div>
+                </dd>
+            </dl>
+
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn add_module_confirm">确定</button>
+        </div>
+    </div>
+    <!----弹框 end-->
+
+    <!--删除提示框-->
+    <div class="modal fadeInDownBig myModaldel" id="delModal" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog" role="document"> <span class="icon"></span>
+            <p id="confirmContent">隐藏后可在内容模块设置显示，是否隐藏？</p>
+            <div class="delbtn"><a class="submit" id="confirmSuccess">确定</a><a class="reset" id="confirmCancel">取消</a></div>
+        </div>
+    </div>
+
+    <!--图标库-->
+    <!--图标库-->
+    <div class="modal fade" id="myModalIcon" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content iconModal">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                    <h4 class="modal-title" id="myModalLabel">图标库</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="icon_search">
+                        <input id="icon_search_value" placeholder="图标名称">
+                        <a class="search" id="icon_search"></a>
+                    </div>
+                    <div class="iconmodalNav clearfix">
+                        <ul class="icon_type">
+                            <li><a data-type="" class="current" href="javascript:void(0);">全部</a></li>
+                            <li><a data-type="1" href="javascript:void(0);">通用</a></li>
+                            <li><a data-type="2" href="javascript:void(0);">个人信息</a></li>
+                            <li><a data-type="3" href="javascript:void(0);">教育背景</a></li>
+                            <li><a data-type="4" href="javascript:void(0);">工作经历</a></li>
+                            <li><a data-type="5" href="javascript:void(0);">技能证书</a></li>
+                            <li><a data-type="6" href="javascript:void(0);">兴趣爱好</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="iconmodalCon clearfix" id="icon_list">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        var flag = "";
+    </script>
+    <script src="/static/source/stat.php" language="JavaScript"></script>
+    <script src="/static/source/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=1259773779" target="_blank" title="站长统计">站长统计</a>
+    <script>
+        function get_resume_item(formodel) {
+            //判断长度
+            var model_len = $("." + formodel + "_").length;
+            var _formodel = formodel + '_';
+            var _model_len = formodel + '_' + model_len;
+            if (formodel == 'education') {
+                var time_ = 'ed_time';
+                var name_ = 'ed_name';
+                var job_ = 'ed_major';
+                var conten_ = 'ed_content';
+                var _job_html = 'XXXXXX(XX)';
+            } else {
+                var time_ = formodel + '_time';
+                var name_ = formodel + '_name';
+                if (formodel == 'item') {
+                    var job_ = formodel + '_title';
+                } else {
+                    var job_ = formodel + '_job';
+                }
+                var conten_ = formodel + '_content';
+                var _job_html = 'XXXXXX';
+            }
+            if (formodel == 'custom') {
+                _model_len = '';
+            }
+            return '<div class="baseContent baseDel resume_item_items resume_delete_area ' + _formodel + ' ' + _model_len + '"  for-id="">\
+		<div class="delete resume_delete"></div>\
+		<div class="conTitle">\
+			<span class="conTitle_time"><div class="' + formodel + '_msg baseBorder" for-key="' + time_ + '" contenteditable="true">XXXX.XX-XXXX.XX</div></span>\
+			<span class="conTitle_company"><div class="' + formodel + '_msg baseBorder" for-key="' + name_ + '" contenteditable="true">XXXXXX</div></span>\
+			<span class="conTitle_post"><div class="' + formodel + '_msg baseBorder" for-key="' + job_ + '" contenteditable="true">' + _job_html + '</div></span>\
+		</div>\
+		<div class="baseDel_ resume_delete_area_">\
+			<div class="delete_ resume_delete_"></div>\
+			<div class="conDisc baseBorder baseDel ' + formodel + '_msg" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本" for-key="' + conten_ + '">XXXXXX</div>\
+		</div>\
+	</div>';
+        }
+
+        function get_custom_model_html(_id, _title, _time, _name, _job, _content) {
+            return '<div class="custDel baseItem positonDiv resume_item resume_add_area resume_sort resume_notice" notice-key="edu" id="resume_' + _id + '" time_id="' + _id + '">\
+	<ul class="editBtn" for-model="custom">\
+		<li class="btnMove" style="cursor:move;" data-placement="top" title="拖动调整上下位置" ></li>\
+		<li class="btnPlus resume_add" for-key="resume_item" data-placement="bottom" title="添加一项"></li>\
+		<li class="btnDel resume_hidden" for-id="resume_' + _id + '" data-placement="bottom" title="隐藏该模块"></li>\
+	</ul>\
+	<div class="cust_delete resume_custom_delete"></div>\
+	<dl class="mouldDiv" time-id="' + _id + '">\
+		<dt class="mtitle">\
+			<a class="resume_icon_diy icon wbdfont" for-id="edu" style="font-size:none">&#xe698;</a>\
+			<span><div class="resume_lang_custom custom_msg" for-key="custom_title" contenteditable="true">' + _title + '</div><div class="Border resume_line" for-id="edu"></div></span>\
+		</dt>\
+		<dd class="resume_append_area" for-model="custom">\
+			<div class="baseContent baseDel resume_item_items resume_delete_area custom_" for-id="">\
+				<div class="delete resume_delete"></div>\
+				<div class="conTitle">\
+					<span class="conTitle_time"><div class="custom_msg baseBorder" for-key="custom_time" contenteditable="true">' + _time + '</div></span>\
+					<span class="conTitle_company"><div class="custom_msg baseBorder" for-key="custom_name" contenteditable="true">' + _name + '</div></span>\
+					<span class="conTitle_post"><div class="custom_msg baseBorder" for-key="custom_job" contenteditable="true">' + _job + '</div></span>\
+				</div>\
+				<div class="baseDel_ resume_delete_area_">\
+					<div class="delete_ resume_delete_"></div>\
+					<div class="conDisc baseBorder baseDel custom_msg tooltips" contenteditable="true" title="复制粘贴文字请右键-粘贴为纯文本" for-key="custom_content">' + _content + '</div>\
+				</div>\
+			</div>\
+		</dd>\
+	</dl>\
+</div>';
+        }
+
+        function get_custom_model_content_html(_id, _title, _content) {
+            return '<div class="custDel baseItem positonDiv resume_item resume_sort resume_notice" notice-key="cert" id="resume_' + _id + '" time_id="' + _id + '" for-key="cart">\
+	<ul class="editBtn" for-model="custom">\
+		<li class="btnMove" style="cursor:move;"data-placement="top" title="拖动调整上下位置"></li>\
+		<li class="btnDel resume_hidden" for-id="resume_' + _id + '" data-placement="bottom" title="隐藏该模块"></li>\
+	</ul>\
+	<div class="cust_delete resume_custom_delete"></div>\
+	<dl class="mouldDiv" time-id="' + _id + '">\
+		<dt class="mtitle">\
+			<a class="resume_icon_diy icon wbdfont" for-id="cart" style="font-size:none">&#xe698;</a>\
+			<span><div class="resume_lang_custom custom_msg" for-key="custom_title" contenteditable="true">' + _title + '</div><div class="Border resume_line" for-id="cart"></div></span>\
+		</dt>\
+		<dd>\
+			<div class="baseContent custom_" for-id="">\
+				<div class="conDisc baseBorder resume_lang_cert_value custom_msg" contenteditable="true" data-toggle="tooltip" data-placement="top" title="复制粘贴文字请右键-粘贴为纯文本" for-key="custom_content">' + _content + '</div>\
+			</div>\
+		</dd>\
+	</dl>\
+</div>';
+        }
+        setTheme();
+        resumeStyle([{
+            "jm0203_j1": "254665"
+        }, {
+            "jm0203_j2": "dd415e"
+        }, {
+            "jm0203_j3": "967a5b"
+        }, {
+            "jm0203_j4": "3390cd"
+        }, {
+            "jm0203_j5": "f54f4f"
+        }, {
+            "jm0203_j6": "4d4d4d"
+        }, {
+            "jm0203_j7": "aa8460"
+        }, {
+            "jm0203_j8": "76ba31"
+        }, {
+            "jm0203_j9": "647ec9"
+        }], 'jm0203_j1');
+    </script>
+    <!---------------------------------------------------------------------->
+
+    <div id="bigpicker" class="bigpicker" style="width: 227px; height: 163px; display: none;">
+        <ul class="bigpicker-bgview-text">
+            <li>
+                <div id="bigBgshowDiv"></div>
+            </li>
+            <li><input id="bigHexColorText" size="7" maxlength="7" value="#000000"></li>
+        </ul>
+        <div id="bigSections" class="bigpicker-sections-color bigpicker-bgimage" style="height: 132px; width: 220px;"></div>
+        <div id="bigLayout" class="biglayout"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div class="tips-black">
+        <div class="tip-inner tip-bg-image"></div>
+        <div class="tip-arrow tip-arrow-top tip-arrow-right tip-arrow-bottom tip-arrow-left"></div>
+    </div>
+    <div id="ascrail2000" class="nicescroll-rails" style="width: 5px; z-index: 101; cursor: default; position: fixed; top: 65px; left: -9px; height: 885px; opacity: 1; display: none;">
+        <div style="position: relative; top: 0px; float: right; width: 5px; height: 0px; background-color: rgb(76, 179, 221); border: 0px; background-clip: padding-box; border-radius: 0px;"></div>
+    </div>
+    <div id="ascrail2000-hr" class="nicescroll-rails" style="height: 5px; z-index: 101; top: 945px; left: -290px; position: fixed; opacity: 1; cursor: default; display: none;">
+        <div style="position: relative; top: 0px; height: 5px; width: 0px; background-color: rgb(76, 179, 221); border: 0px; background-clip: padding-box; border-radius: 0px;"></div>
+    </div>
+    <div id="ascrail2001" class="nicescroll-rails" style="width: 5px; z-index: 101; cursor: default; position: fixed; top: 65px; left: -9px; height: 885px; opacity: 1; display: none;">
+        <div style="position: relative; top: 0px; float: right; width: 5px; height: 0px; background-color: rgb(76, 179, 221); border: 0px; background-clip: padding-box; border-radius: 0px;"></div>
+    </div>
+    <div id="ascrail2001-hr" class="nicescroll-rails" style="height: 5px; z-index: 101; top: 945px; left: -290px; position: fixed; opacity: 1; cursor: default; display: none;">
+        <div style="position: relative; top: 0px; height: 5px; width: 0px; background-color: rgb(76, 179, 221); border: 0px; background-clip: padding-box; border-radius: 0px;"></div>
+    </div>
+	
+</body>
+
+</html>

@@ -1,0 +1,444 @@
+.gaming .live__main {
+  height: 600px;
+}
+
+.gaming .compare__title {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.gaming .compare_description {
+  color: white;
+}
+
+.gaming .cdn__compare {
+  min-height: 840px;
+}
+
+.gaming .compare__params {
+  height: 480px;
+}
+
+.gaming .cdn__params {
+  height: 440px;
+  margin-top: 24px;
+}
+
+.gaming .compare_description {
+  text-align: center;
+  margin-top: 80px;
+}
+
+.gaming .icon__microphone {
+  width: 45px;
+  height: 45px;
+  background: url(../img/gaming/microphone.png) center 0 no-repeat;
+}
+
+.gaming .icon__earphone {
+  width: 45px;
+  height: 45px;
+  background: url(../img/gaming/earphone.png) center 0 no-repeat;
+}
+
+.gaming .icon__gaming__switcher {
+  width: 45px;
+  height: 45px;
+  background: url(../img/gaming/icon__gaming__switcher.png) center 0 no-repeat;
+}
+
+.gaming .icon__gaming__unity {
+  width: 45px;
+  height: 45px;
+  background: url(../img/gaming/icon__gaming__unity.png) center 0 no-repeat;
+}
+
+.gaming .icon__gaming__globe {
+  width: 45px;
+  height: 45px;
+  background: url(../img/gaming/icon__gaming__globe.svg) center 0 no-repeat;
+}
+
+.gaming .icon__gaming__satellite {
+  width: 45px;
+  height: 45px;
+  background: url(../img/gaming/icon__gaming__satellite.svg) center 0 no-repeat;
+}
+
+.gaming .customer__item:nth-child(1) {
+  width: 150px;
+}
+
+.gaming .live__advantage__box {
+  min-height: 720px;
+}
+
+.gaming .video__resolution {
+  min-height: 440px;
+}
+
+.gaming .video__ui__custom {
+  min-height: 440px;
+}
+
+.gaming .gaming__experence .video__ui__custom {
+  padding-top: 100px;
+}
+
+.gaming .gaming__develop {
+  padding-top: 100px;
+}
+
+.gaming .gaming__global__sync .auto__img {
+  bottom: 40px;
+}
+
+.gaming .gaming__global__sync .video__server__info {
+  margin-top: -100px;
+}
+
+.mode_nav {
+  margin: auto;
+  position: absolute;
+  left: 280px;
+  z-index: 100;
+}
+
+.mode_nav li {
+  float: left;
+  margin-left: 50px;
+  font-size: 20px;
+}
+
+.gaming__circle__center {
+  position: absolute;
+  left: 300px;
+  top: 200px;
+  z-index: 51;
+}
+
+.mode__mobile__vertical {
+  position: absolute;
+  left: 140px;
+  top: 80px;
+}
+
+.mode__mobile__horizontal {
+  position: absolute;
+  left: 0;
+  top: 180px;
+}
+
+.gaming__slick__wrapper {
+  width: 1200px;
+}
+
+.gaming__slick__container {
+  float: left;
+  position: relative;
+  width: 1200px;
+  height: 700px;
+}
+
+.circle__box {
+  z-index: 50;
+}
+
+.mode__mobile__content {
+  position: absolute;
+  left: 530px;
+  top: 180px;
+  z-index: 100;
+}
+
+.gaming__mobile__title {
+  font-size: 36px;
+  line-height: 1.5em;
+}
+
+.gaming_mobile__subtitle {
+  height: 10px;
+  display: block;
+}
+
+.gaming__mobile__desc {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+.mode__mobile__content .btn__try {
+  font-size: 20px;
+  margin-top: 14px;
+}
+
+.mode_nav li {
+  cursor: pointer;
+}
+
+.mode_nav .mode_nav_active,
+.mode_nav li:hover {
+  color: #00A0E9;
+}
+
+.gaming .cdn__compare__title_cn {
+  color: #5C6165;
+}
+
+.gaming .live__advantage__circle .circle__box {
+  top: 64px;
+  left: 120px;
+  z-index: -1;
+}
+
+.gaming .live__advantage .icon__right__dark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: url(../img/gaming/icon__right__dark.svg);
+  z-index: 200;
+  top: 350px;
+  right: -20px;
+  background-repeat: no-repeat;
+}
+
+.gaming .live__advantage .icon__right__dark:hover {
+  background: url(../img/gaming/icon__right__blue.svg);
+  background-repeat: no-repeat;
+}
+
+.gaming .live__advantage .icon__left__dark {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  background: url(../img/gaming/icon__left__dark.svg);
+  z-index: 200;
+  top: 350px;
+  left: -20px;
+  background-repeat: no-repeat;
+}
+
+.gaming .live__advantage .icon__left__dark:hover {
+  background: url(../img/gaming/icon__left__blue.svg);
+  background-repeat: no-repeat;
+}
+
+.gaming #js_advantage_animation {
+  overflow: visible;
+}
+
+.gaming .compare__value {
+  padding-left: 5px;
+  font-weight: bold;
+}
+
+.gaming .customers__evaluation .icon__arraw-left {
+  left: -30px;
+  z-index: 200;
+}
+
+.gaming .customers__evaluation .icon__arraw-right {
+  z-index: 200;
+  right: -30px;
+}
+
+.gaming .compare__params {
+  padding-top: 48px;
+}
+
+.gaming .compare__value__encoding {
+  float: right;
+  width: 285px;
+}
+
+.gaming .compare__param__encoding {
+  padding-bottom: 40px;
+}
+
+.gaming .compare__params {
+  width: 440px;
+}
+
+.gaming .cdn__params {
+  width: 392px;
+}
+
+.gaming .compare_description_star {
+  padding-right: 5px;
+}
+
+.gaming .video__resolution,
+.gaming .video__ui__custom {
+  max-width: 920px;
+}
+
+.gaming .many__people {
+  padding-top: 75px;
+}
+
+.gaming .cdn__compare__title {
+  font-weight: 500;
+}
+
+.gaming .cdn__compare__title_en {
+  font-weight: 700;
+}
+
+.gaming .compare__param__item {
+  padding-bottom: 32px;
+}
+
+.gaming .img__poker {
+  width: 370px;
+}
+
+.gaming .cdn__compare__title {
+  padding-bottom: 28px;
+}
+
+.gaming .amg__voice__btn {
+  margin-left: 130px;
+  margin-top: 10px;
+}
+
+.gaming .video__server__info {
+  width: 40%;
+  margin-left: 10%;
+}
+
+.gaming .compatibility {
+  margin-left: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .gaming .mode__mobile__vertical,
+  .gaming .gaming__circle__center,
+  .gaming .live__advantage__circle,
+  .gaming .icon__arrow {
+    display: none;
+  }
+
+  .gaming .mode_nav {
+    left: 10%;
+  }
+
+  .col-6 {
+    width: 100%;
+  }
+
+  .gaming .mode__mobile__vertical {
+    display: none;
+    position: relative;
+    float: left;
+    clear: both;
+    left: 20px;
+    top: 100px;
+  }
+
+  .gaming .mode__mobile__horizontal {
+    display: none;
+    float: left;
+    clear: both;
+    left: 20px;
+    top: 100px;
+  }
+
+  .gaming .mode__mobile__content {
+    float: left;
+    clear: both;
+    left: 0;
+    padding-left: 0;
+    top: 100px;
+  }
+
+  .gaming .el__center-480 {
+    float: left;
+    clear: both;
+    left: 0;
+  }
+
+  .gaming .live__advantage__box {
+    height: 500px;
+  }
+
+  .gaming .compare__params,
+  .gaming .cdn__params {
+    width: inherit;
+  }
+
+  .gaming .gaming__global__sync .video__server__info {
+    margin-top: 0px;
+  }
+
+  .gaming .customer__item {
+    width: 150px;
+  }
+
+  .gaming .gaming__mobile__title {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  .gaming .gaming__mobile__desc {
+    font-size: 18px;
+    max-width: 250px;
+  }
+
+  .gaming .live__advantage__box {
+    min-height: 500px;
+  }
+
+  .gaming .compare__param__item {
+    padding-bottom: 18px;
+  }
+
+  .gaming .amg__voice__btn {
+    margin-left: 50px;
+    font-size: 12px;
+  }
+
+  .gaming .video__server__info {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .gaming .mode_nav li {
+    font-size: 12px;
+    margin-left: 8px;
+  }
+
+  .gaming .mode_nav {
+    margin-left: -8px;
+  }
+
+  .gaming .compare__title {
+    font-size: 28px;
+  }
+
+  .gaming .customer__item {
+    width: 70px;
+  }
+
+  .gaming .customer__item:nth-child(1) {
+    width: 90px;
+  }
+
+  .gaming .customers__box {
+    width: 100%;
+  }
+
+  .gaming .customer__item img {
+    max-width: 60px;
+  }
+
+  .gaming .compatibility {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .gaming .compare__params {
+    min-height: 510px;
+  }
+}

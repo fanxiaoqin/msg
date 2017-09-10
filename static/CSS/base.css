@@ -1,0 +1,175 @@
+*{
+    margin: 0 auto;
+}
+body {
+    font-size: 14px;
+    color: #333
+}
+html,body {
+    height: 100%;
+    margin: 0;
+}
+
+/*href*/
+a {
+    color: #333
+}
+
+
+a:hover {
+	color: #ff0000
+}
+
+
+/*input placeholder color */
+*::-webkit-input-placeholder {
+    color: #cccccc;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #cccccc;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #cccccc;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #cccccc;
+}
+
+/*button*/
+button{
+	width: 180px;
+	height: 48px;
+    border: none;
+    border-radius: 4px
+}
+.button-orange{
+	background-color: #f9ac34;
+    color:#ffffff;
+}
+.button-green{
+	background-color: #43cf76;
+    color:#ffffff;
+}
+.button-grey{
+	background-color: #aaa
+}
+.button-white{
+    background-color: #fff;
+    color: #999
+}
+/*color*/
+
+.light-green {
+    color: #43cf76
+}
+
+.dark-green {
+    color: #0cac69
+}
+
+.orange {
+    color: #f9ac34
+}
+
+.dark-grey {
+    color: #aaa
+}
+
+.light-grey {
+    color: #e5e5e5
+}
+
+.red {
+    color: #ff0000
+}
+
+.white {
+    color: #fff
+}
+.bg-grey{
+    background-color: #f4f5f7;
+}
+
+.bg-green{
+    background-color: #e2f1e8;
+    border: solid 1px #42c071;
+}
+
+
+/*font-color*/
+
+.font-default0 {
+    color: #333
+}
+
+.font-default1 {
+    color: #fff
+}
+
+.font-dark {
+    color: #666
+}
+
+.font-default {
+    color: #999
+}
+
+.font-light {
+    color: #c1c1c1
+}
+
+
+/*font-size*/
+
+.font-s {
+    font-size: 12px
+}
+
+.font-m {
+    font-size: 14px
+}
+
+.font-l {
+    font-size: 18px
+}
+
+.font-xl {
+    font-size: 24px
+}
+.font-xxl{
+    font-size: 36px;
+}
+.code-success{
+    background: url("../../images/student/success_grey.png") no-repeat center;
+    background-size: cover;
+}
+.code-failed{
+    background: url("../../images/student/failed_grey.png") no-repeat center;
+    background-size: cover;
+}
+.success-green {
+    background: url("../../images/student/success_green.png") no-repeat center;
+    background-size: cover;
+}
+.wrapper {
+    min-height: 100%;
+
+    /* 等于footer的高度 */
+    margin-bottom: -50px;
+}
+.footer,
+.push {
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+.show {
+    display: block;
+}

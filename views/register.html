@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>注册-面试官</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="static/CSS/style-login.css">
+<script src=""></script>
+<script charset="utf-8" src=""></script>
+<script src="static/JS/hm.js"></script>
+<script charset="utf-8" src="./JS/v.js"></script>
+<script src="static/JS/jquery-1.12.3.min.js"></script>
+<script src="static/JS/ca_dialog-min.js"></script>
+<script src="static/JS/notify.min.js"></script>
+<style type="text/css" id="notify-bootstrap">
+    .notifyjs-bootstrap-base {
+        padding: 15px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        text-align: center;
+    }
+    .notifyjs-bootstrap-error {
+        color: #E9EDEF;
+        background-color: rgba(231,76,60,0.88);
+        border-color: rgba(231,76,60,0.88);
+    }
+    .notifyjs-bootstrap-success {
+        color: #ffffff;
+        background-color: rgba(38,185,154,0.88);
+        border-color: rgba(38,185,154,0.88);
+    }
+    .notifyjs-bootstrap-info {
+        color: #E9EDEF;
+        background-color: rgba(52,152,219,0.88);
+        border-color: rgba(52,152,219,0.88);
+    }
+    .notifyjs-bootstrap-warn {
+        color: #E9EDEF;
+        background-color: rgba(243,156,18,0.88);
+        border-color: rgba(243, 156, 18, 0.88);
+    }
+</style>
+
+<script src="static/JS/jquery.i18n.js"></script>
+<script src="static/JS/jquery.i18n.messagestore.js"></script>
+<script src="static/JS/jquery.i18n.fallbacks.js"></script>
+<script src="static/JS/jquery.i18n.parser.js"></script>
+<script src="static/JS/jquery.i18n.emitter.js"></script>
+<script src="static/JS/jquery.i18n.language.js"></script>
+<script src="static/JS/jquery.i18n.emitter.bidi.js"></script>
+
+<style type="text/css" id="core-notify">
+        .notifyjs-corner {
+            position: fixed;
+            margin: 5px;
+            z-index: 1050;
+        }
+
+        .notifyjs-corner .notifyjs-wrapper,
+        .notifyjs-corner .notifyjs-container {
+            position: relative;
+            display: block;
+            height: inherit;
+            width: inherit;
+            margin: 3px;
+        }
+
+        .notifyjs-wrapper {
+            z-index: 1;
+            position: absolute;
+            display: inline-block;
+            height: 0;
+            width: 0;
+        }
+
+        .notifyjs-container {
+            display: none;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .notifyjs-hidable {
+            cursor: pointer;
+        }
+
+        [data-notify-text],[data-notify-html] {
+            position: relative;
+        }
+
+        .notifyjs-arrow {
+            position: absolute;
+            z-index: 2;
+            width: 0;
+            height: 0;
+        }
+    </style>
+    <style type="text/css" id="core-notify">
+        .notifyjs-corner {
+            position: fixed;
+            margin: 5px;
+            z-index: 1050;
+        }
+
+        .notifyjs-corner .notifyjs-wrapper,
+        .notifyjs-corner .notifyjs-container {
+            position: relative;
+            display: block;
+            height: inherit;
+            width: inherit;
+            margin: 3px;
+        }
+
+        .notifyjs-wrapper {
+            z-index: 1;
+            position: absolute;
+            display: inline-block;
+            height: 0;
+            width: 0;
+        }
+
+        .notifyjs-container {
+            display: none;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .notifyjs-hidable {
+            cursor: pointer;
+        }
+
+        [data-notify-text],[data-notify-html] {
+            position: relative;
+        }
+
+        .notifyjs-arrow {
+            position: absolute;
+            z-index: 2;
+            width: 0;
+            height: 0;
+        }
+    </style>
+</head>
+<body class="full__bg" rlt="1">
+    <svg id="line-sine" width="2264px" height="395px" viewBox="-91 272 2264 395" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <desc>Created with Sketch.</desc>
+        <defs></defs>
+        <g id="wave" opacity="0.35" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-90.000000, 273.000000)">
+            <path d="M49.2562814,391.102456 C49.2562814,391.102456 495.444986,-150.883066 1095.08631,130.835928 C1694.72764,412.554923 2262,389.462704 2262,389.462704" id="Path-2" stroke="#FFFFFF" opacity="0.5" transform="translate(1155.628141, 220.380740) scale(1, -1) translate(-1155.628141, -220.380740) "></path>
+            <path d="M0,393 C0,393 407.987617,-230.823127 956.289789,93.4342872 C1504.59196,417.691701 2023.29648,391.112651 2023.29648,391.112651" id="Path-2" stroke="#FFFFFF" fill="#24A3E2"></path>
+        </g>
+    </svg>
+    <div class="flex__justify member__box">
+        <div class="flex__justify__item member__company__info">
+            <h1 class="logo">
+                <a href="https://dashboard.agora.io/"></a>
+            </h1>
+            <div class="company_info">
+                <h2>面试官</h2>
+                <div class="">为求职人员带来极大方便，备战大公司招聘，提高应试综合能力。</div>
+                <ul class="member__feature__list">
+                    <li class="member__feature__item"><i class="dot">·</i>面对面</li>
+                    <li class="member__feature__item"><i class="dot">·</i>视频模拟</li>
+                    <li class="member__feature__item"><i class="dot">·</i>题库</li>
+                    <li class="member__feature__item"><i class="dot">·</i>简历制作</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="flex__justify__item">
+            <input type="hidden" id="next" value="/">
+    <input type="hidden" id="js_language" value="chinese">
+    <input type="hidden" id="js_locale" value="zh">
+    <select id="js_nation_select" class="select-list" required="" multiple="" style="display:none;">
+        <option value="CN" selected="">China</option>
+    </select>
+    <div class="member__info__box" id="js_signup_box">
+
+        <div class="member__option flex__justify">
+            <span class="flex__justify__item js_change_signup option-active">注册</span>
+            <a href="/logi"><span class="not_registered_yet flex__justify__item">已有账号？点此登录</span></a>
+        </div>
+        <div class="member__form">
+            <ul>
+                <li class="member__form__item">
+                    <div class="form__label flex">
+                        <input class="form__element flex__item" id="email" type="mail" placeholder="电子邮件" value="">
+                    </div>
+                    <div class="tips__item tips__item__warning" id="tips_warning_signup_username">邮箱是你的唯一登录凭证，建议填写常用邮箱</div>
+                    <div class="tips__item tips__item__error" id="tips_error_signup_username" style="display: none;">Email 格式有误</div>
+                    <div class="tips__item tips__item__success" id="tips_success_signup_username"></div>
+                </li>
+                <li class="member__form__item">
+                    <div class="form__label flex">
+                        <input class="form__element flex__item" id="password" type="password" placeholder="密码" value="">
+                    </div>
+                   
+                </li>
+                <li class="member__form__item">
+                    <div class="form__label flex">
+                        <input class="form__element flex__item" id="again" type="password" placeholder="确认密码" value="">
+                    </div>
+                    <div class="tips__item tips__item__error" id="tips_error_signup_confirm"></div>
+                </li>
+                <li class="member__form__item">
+                    <label class="member__option__desc"><input id="js_agreeLicense" type="checkbox" checked="">
+                        &nbsp;我已阅读  <a target="_blank" href="">《面试官 网站许可文件》</a>
+                    </label>
+                    <div class="tips__item tips__item__error" id="tips_error_signup_agreement"></div>
+                </li>
+                <li class="flex">
+                    <button class="btn flex__item" onclick="SignUP()">注册</button>
+                </li>
+            </ul>
+        </div>
+    </div>
+   
+
+    </div>
+</div>
+
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
+	 <script type="text/javascript">
+    function SignUP() {
+        var $email = $('#email');
+        if ($email.val().trim() == '') {
+            alert('请输入正确邮箱');
+            $email.focus();
+            return;
+        }
+       
+        var $password = $('#password');
+        if($password.val().trim()==''){
+			alert('请输入密码');
+			$password.focus();
+			return;
+		}
+		var $again = $('#again');
+        if($again.val().trim()==''){
+			alert('请再次输入密码');
+			$again.focus();
+			return;
+		}
+        if($password.val().trim()==$again.val().trim()){
+        var datas = {
+            email: $email.val().trim(),
+          
+            password: $password.val().trim(),
+		
+        }
+        $.post('/signup', datas, function(data) {
+			console.log(data);
+            if (data.status == 2) {
+               alert('注册成功，转入登录');
+              
+               window.location.href = '/logi';
+               
+            } else {
+                alert('注册失败')
+            }
+        }, 'json');
+		}
+    }
+    </script>
+
+    </body>
+</html>

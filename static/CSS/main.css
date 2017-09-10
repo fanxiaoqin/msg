@@ -1,0 +1,47 @@
+/*内容框部分*/
+
+@import "./components/ContentBox.css";
+
+/*轮播图*/
+.banner{
+    height:480px;
+    width:100%;
+    background: url("../../images/student/banner.png") no-repeat center;
+}
+
+/*正文部分*/
+.container{
+    margin-top:50px;
+}
+
+.container-title{
+    float: left;
+}
+
+.container-title i{
+    width:5px;
+    height:20px;
+    background: #43CF76;
+    display: inline-block;
+}
+
+.container-title h5{
+    display: inline-block;
+    margin-left:10px;
+}
+
+.container-more{
+    float: right;
+}
+
+/*让内容框能够横排显示*/
+
+.container-box{
+    margin-right: 22px;
+    margin-top:40px;
+    float: left;
+}
+
+.container-box:last-child{
+    margin-right: 0px;
+}

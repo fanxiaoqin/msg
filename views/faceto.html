@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>面对面-面试官</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="static/CSS/style-index.css">
+    <link rel="stylesheet" type="text/css" href="static/CSS/style-aos.css">
+    </head>
+    <body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="100" rlt="1">
+        <div class="full__row live__main">
+            <div class="header__box">
+        <div class="header">
+            <div class="header__inneer">
+                <h1 class="logo">
+                    <a href="/" class="logo__link">MSG</a>
+                </h1>
+				 
+                <nav class="nav" id="js_nav">
+				<div class="fold__menu__box">
+                        <a href="/face" class="fold__menu has__sub_nav " id="js_fold_menu" style="color:#06B1D1">面对面</a>
+                        <div class="fold__menu__items hide" style="display: none;">
+                            <a href="/use">使用指南</a>
+                        </div>
+						<a href="/video" class="fold__menu ">视频模拟</a>
+                    <a href="/tbank" class="fold__menu">题库</a>
+                    <a href="/resume" class="fold__menu">简历制作<div class="icon__new"><img src="static/images/icon_new_blue.svg"></div></a>
+                    <a href="/shequ-1" class="fold__menu">社区交流</a>
+                    </div>
+                    
+                </nav>
+                <div class="login__gruop">
+                    <div class="login__box btn btn__border-gradient">
+                        <span>
+                                <a href="/logi">登录</a> 
+                                <a href="/sign">注册</a>
+                            </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+	
+
+            <i class="icon icon__menu" id="js_menu"></i>
+            <div id="siri-broadcast"><canvas width="1280" height="500" style="width: 1280px; height: 500px;"></canvas></div>
+            <div class="container">
+                <div class="many__people">
+                    <div class="many__people__info">
+                        <h3>邀人面对面视频面试</h3><br>
+                        <p>·可选择同学、朋友、亲属等有过面试经验或是一起备战面试的人</p>
+                        <p><a href="/sdk" class="btn btn__white">立即邀人</a></p>
+                    </div>
+                    <div class="part-10">
+                        <div class="people__items col-12" id="js_change_video">
+                            <div class="people__item people__item-1" data-video-name="people_1" style="bottom: 60px; left: -125px; transform: perspective(500px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 242.2, -32.4, 0, 1);"></div>
+                            <div class="people__item people__item-2" data-video-name="people_2" style="bottom: 170px; left: 74.551px; transform: perspective(500px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 242.2, 34.6, 0, 1);"></div>
+                            <div class="people__item people__item-3" data-video-name="people_3" style="bottom: 100px; left: 274.102px; transform: perspective(500px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 242.2, -34.4, 0, 1);"></div>
+                            <div class="people__item people__item-4" data-video-name="people_4" style="bottom: 150px; left: 473.653px; transform: perspective(500px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 242.2, 34.6, 0, 1);"></div>
+                            <div class="people__item people__item-5" data-video-name="people_5" style="bottom: 210px; left: 673.204px; transform: perspective(500px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 242.2, -32.8, 0, 1);"></div>
+                            <div class="people__item people__item-6" data-video-name="people_6" style="bottom: 75px; left: 872.755px; transform: perspective(500px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 242.2, 32.8, 0, 1);"></div>
+                            <div class="people__item people__item-7 peopleFadeIn peopleFadeOut" data-video-name="people_7" style="bottom: 170px; left: -89.5px; transform: perspective(500px) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, -165.7, -26.8, 0, 1);"></div>
+                            <div class="people__video">
+                                <video id="js_video_people" preload="auto" autoplay="autoplay" loop="loop" style="width: 200px; height: 354px;" webkit-playsinline="true"><source src="static/images/casting.mp4" type="video/mp4"></video>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="live__advantage__box">
+                <div class="live__advantage row__valign part-10">
+                    <div class="live__advantage__items valign col-6">
+                        <div class="el__center">
+                            <h3 class="live__advantage__title">预约专家面试 <a href="http://docs.agora.io/cn/user_guide/Component_and_Others/Terminology.html#udp" target="_blank"></h3>
+                            <p class="live__advantage__item">专设专家库</p>
+                            <p class="live__advantage__item">只有毫秒级的延迟</p>
+                            <p class="live__advantage__item">视频+语音交流</p>
+                            <p class="live__advantage__item">才能让你和专家实时全互动</p>
+                            <br>
+                            <p><a href="/zj" class="btn btn__gradient"><span>立即预约</span></a></p>
+                        </div>
+                    </div>
+                    <div class="live__advantage__media valign col-6">
+                        <img src="static/images/experts3.jpg" data-aos="fade-left" alt="" class="auto__img aos-init">
+                        <div class="live__advantage__circle">
+                            <svg class="circle__box" id="js_advantage_animation" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                            <defs>
+                                <radialgradient id="gradient" cx="0%" cy="0%" r="70%">
+                                    <stop offset="0%" style="stop-color: #03CFB5;"></stop>
+                                    <stop offset="100%" style="stop-color: #1C81F7;"></stop>
+                                </radialgradient>
+                            </defs>
+                                <circle class="circle__inner" cx="916" cy="245" r="128" style="opacity:0;" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                                <circle class="circle__middle" cx="916" cy="245" r="230" style="opacity:0;" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                                <circle class="circle__outer" cx="916" cy="245" r="332" style="opacity:0;" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <svg class="boardcast__circle__box" width="1260px" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialgradient id="gradient" cx="0%" cy="0%" r="180%">
+                            <stop offset="0%" style="stop-color: #03CFB5;"></stop>
+                            <stop offset="100%" style="stop-color: #1C81F7;"></stop>
+                        </radialgradient>
+                    </defs>
+                    <circle cx="635" cy="471" r="250" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle cx="635" cy="471" r="400" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle cx="635" cy="471" r="580" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                </svg>
+            </div>
+        </div>
+        <div class="full__row broadcast__advantage__items">
+            <div class="container row">
+                <div class="advantage__items__box part-8">
+                    <div class="advantage__item col-3">
+                        <strong>分隔两地</strong>
+                        <p>也能面对面</p>
+                    </div>
+                    <div class="advantage__item col-3">
+                        <strong>一对一</strong>
+                        <p>全程针对练习</p>
+                    </div>
+                    <div class="advantage__item col-3">
+                        <strong class="font--small">记录功能</strong>
+                        <p>随时记录面试情况</p>
+                    </div>
+                    <div class="advantage__item col-3">
+                        <strong><small>选择录制</small></strong>
+                        <p>音视频随你选</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="full__row cdn__compare">
+            <div class="container">
+                <div class="part-10">
+                    <div class="col-6">
+                        <div class="compare__params">
+                            <h3 class="cdn__compare__title">面对面视频</h3>
+                            <div class="compare__param__item">
+                                <p>不限时间、地点</p>
+                                <p>随时随地进行面对面视频</p>
+                            </div>
+                            <div class="compare__param__item">
+                                <p>视频+语音即兴表现</p>
+                                <p>互动过程中提高临场应对能力和语言组织能力</p>
+                            </div>
+                            <div class="compare__param__item">
+                                <p>支持录制视频</p>
+                            </div>
+                            <div class="compare__param__item">
+                                <p>预约专家面试</p>
+                                <p>专业面试过程、反馈针对性意见</p>
+                            </div>
+                            <a href="register.html" class="btn btn__white">立即注册</a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="cdn__params">
+                            <h3 class="cdn__compare__title">传统面试</h3>
+                            <div class="cdn__param__item">
+                                <p>受时间地点的限制</p>
+                            </div>
+                            <div class="cdn__param__item">
+                                <p>单向刻板</p>
+                                <p>易紧张、语言表达不流畅</p>
+                            </div>
+                            <div class="cdn__param__item">
+                                <p>不支持语音或者视频录制</p>
+                            </div>
+                            <div class="cdn__param__item">
+                                <p>面试无经验</p>
+                                <p>面试完就走人，得不到经验的反馈</p>
+                            </div>
+                            <span class="compare__info__contact">仍有疑问 ？请咨询客服电话 <a href="tel:4006326626">123-4567</a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+          {{template "tpl-footer.html" .}}
+<script src="static/JS/hm.js"></script>
+<script charset="utf-8" src="static/JS/v.js">
+</script><script async="" src="static/JS/analytics.js"></script>
+<script src="static/JS/jquery.min.js"></script>
+<script src="static/JS/common.js"></script>
+<script src="static/JS/cookie.js"></script>
+<script src="static/JS/aos.js"></script>
+<script>
+    AOS.init({
+        duration: 1200,
+        delay: 100,
+    })
+</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?71179bbad7c652f8289d970d29f36014";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-76402370-1', 'auto');
+    ga('send', 'pageview');
+</script>
+<script src="static/JS/siriwave.js"></script>
+<script src="static/JS/alloy_flow.js"></script>
+<script src="static/JS/transform.js"></script>
+<script src="static/JS/tick.js"></script>
+<script>
+                var circleAnimationTimer;
+
+                function playCircleAnimation(minRadius, maxRadius) {
+                    $(".live__advantage__circle circle").each(function(index, circle) {
+                        var $circle = $(circle);
+                        var r = $circle.attr("r");
+                        r++;
+                        if (r >= maxRadius) {
+                            r = minRadius;
+                        }
+                        $circle.attr("r", r);
+                        var opacity = (maxRadius - r) / maxRadius;
+                        $circle.css("opacity", opacity);
+                    });
+                }
+
+                function adjustCirclePosition() {
+                    $(".live__advantage__circle circle").each(function(index, circle) {
+                        var $circle = $(circle);
+                        // set initial wave radius
+                        var left = parseInt($(".auto__img").position().left + $(".auto__img").width() / 2);
+                        $circle.attr("cx", left);
+                        var top = parseInt($(".live__advantage__media").position().top + $(".auto__img").height() / 2);
+                        $circle.attr("cy", top);
+                    });
+                }
+
+                function startPlayCircleAnimation() {
+                    var minR = 128;
+                    var maxR = 435;
+                    var interval = 10;
+                    $(".live__advantage__circle circle").each(function(index, circle) {
+                        var $circle = $(circle);
+                        // set initial wave radius
+                        var r = minR + (maxR - minR) / 3 * index;
+                        $circle.attr("r", r);
+                        var opacity = (maxR - r) / maxR;
+                        $circle.css("opacity", opacity);
+                        adjustCirclePosition();
+                    });
+                    clearInterval(circleAnimationTimer);
+                    circleAnimationTimer = setInterval(playCircleAnimation.bind(this, minR, maxR), interval);
+                }
+
+                function stopPlayCircleAnimation() {
+                    clearInterval(circleAnimationTimer);
+                    circleAnimationTimer = null;
+                }
+                $(function() {
+                    function startPlayCircleAnimationByScroll() {
+                        console.log("scroll")
+                        adjustCirclePosition();
+                        var scrollTop = $(window).scrollTop();
+                        var elemTop = 754;
+                        //console.log(scrollTop + $(window).height() - elemTop);
+                        if (scrollTop + $(window).height() - elemTop > 0 && scrollTop - $(".live__advantage__box").height() - elemTop < 0) {
+                            if (!circleAnimationTimer) {
+                                console.log("start");
+                                startPlayCircleAnimation()
+                            }
+                        } else {
+                            if (circleAnimationTimer) {
+                                console.log("stop");
+                                stopPlayCircleAnimation();
+                            }
+                        }
+                    }
+                    $(window).on('scroll', startPlayCircleAnimationByScroll);
+                    $(window).on('resize', startPlayCircleAnimationByScroll);
+                });
+            </script>
+<script>
+                var elements = $('.people__item'),
+                    hdContainer = $('#js_change_video'),
+                    peopleContainer = $('.many__people'),
+                    videoBoxLeft = $('.people__video').offset().left,
+                    flagObj = {},
+                    flagObjStarted = {};
+
+                var playVideo = function(el) {
+                    var video = $('#js_video_people');
+                    var videoPath = '../slice/' + $(el).data('video-name') + '.mp4';
+                    if (video.attr('src') != videoPath) {
+                        video.attr('src', videoPath);
+                        video[0].load();
+                        video[0].play();
+                    }
+                }
+
+                var collision = function(el) {
+                    var left = $(el).offset().left,
+                        videoName = $(el).data('video-name');
+
+                    if ((left >= videoBoxLeft + 60) && !flagObj[videoName]) {
+                        flagObj[videoName] = true;
+                        flagObjStarted[videoName] = false;
+                        // el.translateX += 40;
+                        // playVideo(el);
+                    }
+                    if (left >= (peopleContainer.offset().left + peopleContainer.width()) && !flagObjStarted[videoName]) {
+                        var part = (peopleContainer.width()) / 7;
+                        flagObj[videoName] = false;
+                        flagObjStarted[videoName] = true;
+                        el.translateX = -200;
+                        $(el).css({
+                                "left": peopleContainer.offset().left - $(el).width() - 30
+                            }).removeClass('peopleFadeOut')
+                            .addClass('peopleFadeIn');
+                    }
+                    if ((left + $(el).width() + 10) >= (peopleContainer.offset().left + peopleContainer.width())) {
+                        $(el).addClass('peopleFadeOut');
+                    }
+
+
+                    // if(left + ){
+                    //     $(el).removeClass('');
+                    // }s
+                };
+
+                var alloyFlow = new AlloyFlow({
+                    workflow: [
+                        function() {
+                            var part = (peopleContainer.width() + (peopleContainer.width() / 7) - elements.width()) / 7;
+                            for (var i = 0, len = $('.people__item').length; i < len; i++) {
+                                var left = part * i - 125;
+                                // if (i > 3) {
+                                //     left = part * (i + 1);
+                                // }
+                                $('.people__item').eq(i).css({
+                                    // "bottom": Math.random() * 200 + 50,
+                                    "left": left
+                                })
+                            }
+                            alloyFlow.next();
+                        },
+                        function() {
+                            for (var i = 0, len = elements.length; i < len; i++) {
+                                var element = elements[i];
+                                Transform(element);
+                                var xStep = 0.70,
+                                    yStep = 0.1;
+
+                                translateY = Math.random() * 10 + 30;
+                                // return;
+                                (function(xStep, yStep, element, i, translateY) {
+                                    if (i % 2) {
+                                        tick(function() {
+                                            element.translateY < -translateY && (yStep *= -1);
+                                            element.translateY > translateY && (yStep *= -1);
+                                            element.translateY += yStep;
+                                            element.translateX += xStep;
+                                            collision(element);
+                                        });
+                                    } else {
+                                        tick(function() {
+                                            element.translateY < -translateY && (yStep *= -1);
+                                            element.translateY > translateY && (yStep *= -1);
+                                            element.translateY -= yStep;
+                                            element.translateX += xStep;
+                                            var left = $(element).offset().left;
+                                            collision(element);
+                                        });
+                                    }
+
+                                })(xStep, yStep, element, i, translateY);
+                            }
+                        }
+                    ]
+                });
+
+                if (hdContainer.is(':visible')) {
+                    alloyFlow.start();
+                }
+                var SW = new SiriWave({
+                    width: 1280,
+                    height: 500,
+                    ratio: 1,
+                    speed: 0.006,
+                    amplitude: 0.6,
+                    color: '#fff',
+                    container: document.getElementById('siri-broadcast'),
+                    autostart: true,
+                });
+            </script>
+			
+</body></html>

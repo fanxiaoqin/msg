@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">  
+    <title>登录-面试官</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="apple-mobile-web-app-capable" content="no">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="static/CSS/style-login.css">
+    <script src="static/JS/jquery-1.12.3.min.js"></script>
+    <script src="static/JS/ca_dialog-min.js"></script>
+    <script src="static/JS/notify.min.js"></script>
+    <style type="text/css" id="notify-bootstrap">
+        .notifyjs-bootstrap-base {
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid transparent;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .notifyjs-bootstrap-error {
+            color: #E9EDEF;
+            background-color: rgba(231,76,60,0.88);
+            border-color: rgba(231,76,60,0.88);
+        }
+        .notifyjs-bootstrap-success {
+            color: #ffffff;
+            background-color: rgba(38,185,154,0.88);
+            border-color: rgba(38,185,154,0.88);
+        }
+        .notifyjs-bootstrap-info {
+            color: #E9EDEF;
+            background-color: rgba(52,152,219,0.88);
+            border-color: rgba(52,152,219,0.88);
+        }
+        .notifyjs-bootstrap-warn {
+            color: #E9EDEF;
+            background-color: rgba(243,156,18,0.88);
+            border-color: rgba(243, 156, 18, 0.88);
+        }
+    </style>
+    <script src="static/JS/jquery.i18n.js"></script>
+    <script src="static/JS/jquery.i18n.messagestore.js"></script>
+    <script src="static/JS/jquery.i18n.fallbacks.js"></script>
+    <script src="static/JS/jquery.i18n.parser.js"></script>
+    <script src="static/JS/jquery.i18n.emitter.js"></script>
+    <script src="static/JS/jquery.i18n.language.js"></script>
+    <script src="static/JS/jquery.i18n.emitter.bidi.js"></script>
+   
+    <style type="text/css" id="core-notify">
+        .notifyjs-corner {
+            position: fixed;
+            margin: 5px;
+            z-index: 1050;
+        }
+
+        .notifyjs-corner .notifyjs-wrapper,
+        .notifyjs-corner .notifyjs-container {
+            position: relative;
+            display: block;
+            height: inherit;
+            width: inherit;
+            margin: 3px;
+        }
+
+        .notifyjs-wrapper {
+            z-index: 1;
+            position: absolute;
+            display: inline-block;
+            height: 0;
+            width: 0;
+        }
+
+        .notifyjs-container {
+            display: none;
+            z-index: 1;
+            position: absolute;
+        }
+
+        .notifyjs-hidable {
+            cursor: pointer;
+        }
+
+        [data-notify-text],[data-notify-html] {
+            position: relative;
+        }
+
+        .notifyjs-arrow {
+            position: absolute;
+            z-index: 2;
+            width: 0;
+            height: 0;
+        }
+    </style>
+</head>
+
+
+<body class="full__bg" rlt="1">
+<svg id="line-sine" width="2264px" height="395px" viewBox="-91 272 2264 395" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="wave" opacity="0.35" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-90.000000, 273.000000)">
+        <path d="M49.2562814,391.102456 C49.2562814,391.102456 495.444986,-150.883066 1095.08631,130.835928 C1694.72764,412.554923 2262,389.462704 2262,389.462704" id="Path-2" stroke="#FFFFFF" opacity="0.5" transform="translate(1155.628141, 220.380740) scale(1, -1) translate(-1155.628141, -220.380740) "></path>
+        <path d="M0,393 C0,393 407.987617,-230.823127 956.289789,93.4342872 C1504.59196,417.691701 2023.29648,391.112651 2023.29648,391.112651" id="Path-2" stroke="#FFFFFF" fill="#24A3E2"></path>
+    </g>
+</svg>
+<div class="flex__justify member__box">
+    <div class="flex__justify__item member__company__info">
+        <h1 class="logo">
+            <a href=""></a>
+        </h1>
+        <div class="company_info">
+            <h2>面试官</h2>
+            <div class="">为求职人员带来极大方便，备战大公司招聘，提高应试综合能力。</div>
+            <ul class="member__feature__list">
+                <li class="member__feature__item"><i class="dot">·</i>面对面</li>
+                <li class="member__feature__item"><i class="dot">·</i>视频模拟</li>
+                <li class="member__feature__item"><i class="dot">·</i>题库</li>
+                <li class="member__feature__item"><i class="dot">·</i>简历制作</li>
+            </ul>
+        </div>
+    </div>
+  
+    <div class="flex__justify__item">
+        <input type="hidden" id="next" value="/">
+<div class="member__info__box" id="js_signin_box">
+    <div class="member__option flex__justify">
+        <span class="flex__justify__item js_change_signup option-active">登录</span>
+        <a href="/sign"><span class="not_registered_yet flex__justify__item">还未注册?</span></a>
+    </div>
+    <div class="member__form">
+        <ul>
+            <li class="member__form__item">
+                <div class="form__label flex">
+                    <input class="form__element flex__item" id="log" type="mail" placeholder="用户名" tabindex="1">
+                </div>
+               
+            </li>
+            <li class="member__form__item">
+                <div class="form__label flex">
+                    <input class="form__element flex__item" id="pwd" type="password" placeholder="密码" tabindex="2">
+                    <a  class="forget__password js_change_forget js_change_forget">忘记密码?</a>
+                </div>
+                
+            </li>
+            <li class="flex btn__box">
+                <button class="btn flex__item" id="js_signin_btn" tabindex="3" onclick="login()">登录</button>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+    </div>
+</div>
+<script >
+	function login(){
+		var name = $('#log').val().trim()
+	    var pwd  = $('#pwd').val().trim()
+			if (name == "" || pwd == ""){
+				alert("请输入用户名或密码")
+			}
+			$.post("/login",{username:name,password: pwd},function(data){
+				 console.log(data);
+				if(data.status==2){
+					window.location.href="/" 
+				}else{
+					alert("密码或用户名不对！请重新输入")
+				}
+			},'json')
+	}
+	</script>
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+
+
+
+
+
+</body></html>

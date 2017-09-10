@@ -1,0 +1,321 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background: #f5f5f5;
+}
+/*add*/
+
+/*add*/
+.living{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 5rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.living-today{
+    color: #fff;
+    background: rgb(67, 207, 118);
+}
+
+.living-future{
+    color: #fff;
+    background: rgba(0,0,0,0.7)
+}
+
+.living-record{
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+}
+
+button{
+    cursor: pointer;
+}
+
+/*header部分*/
+header{
+    width:100%;
+    background: #43cf76;
+    height:64px;
+}
+
+.header-main{
+    height:64px;
+    color: #fff;
+    line-height: 64px;
+    /*display: -webkit-box;*/
+    position: relative;
+}
+
+.header-main h3{
+    font-size:24px;
+}
+.header-main>a {
+    color: #FFFFFF;
+    float: left;
+}
+
+.header-main a:hover{
+    color: #ffffff;
+}
+
+.header-checkout{
+    line-height: 64px;
+    float: left;
+}
+
+.header-checkout div{
+    height:22px;
+    line-height: 22px;
+    padding:5px;
+}
+
+.header-checkout div span:first-child{
+    padding:3px 10px 3px 10px;
+    border-radius: 10px 0px 0px 10px;
+    background: #fff;
+    color: #43C676;
+    margin-right: -3px;
+}
+
+.header-checkout div span:last-child{
+    background: #43C676;
+    color: #fff;
+    padding:3px 10px 3px 10px;
+    border-radius: 0px 10px 10px 0px;
+}
+
+.header-tab{
+    height:64px;
+    background-color: #43cf76;
+    width:500px;
+    margin-right:13px;
+    float: left;
+}
+
+.header-tab li.layui-nav-item {
+    line-height: 64px;
+}
+
+.header-tab li.layui-nav-item a{
+    color: #F9FBF5;
+}
+
+.header-tab li.layui-nav-item a:hover{
+    color: #fff;
+    background-color: #0dad6a;
+}
+
+.header-main-right{
+    line-height: 63px;
+    float: left;
+}
+
+.header-main-right .main-right-search{
+    background: #fff;
+    height:34px;
+    width:300px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.main-right-search input{
+    border: 0;
+    width:90%;
+    height:100%;
+    margin-left:10px;
+    font-size:12px;
+    color: #c1c1c1;
+    margin-right:10px;
+    float: left;
+}
+
+.main-right-search i{
+    position: absolute;
+    right: 10px;
+    top: 0px;
+    height: 30px;
+    line-height: 36px;
+    color: #000;
+}
+
+.main-right-login{
+    margin-left:20px;
+}
+
+.main-right-login a{
+    color: #F9FBF5;
+    margin:2px;
+}
+
+.main-right-login a:hover{
+    color: #fff;
+}
+
+/*遮罩层*/
+
+.Mask{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 19891025;
+    background-color: rgba(0,0,0,0.6);
+    position: fixed;
+    _position: absolute;
+    pointer-events: auto;
+}
+
+.Mask-auto{
+    display: inline-block;
+    height: 200px;
+    width:25%;
+    line-height: 200px;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+}
+
+.Mask-load{
+    text-align: center;
+    height: 200px;
+    line-height: 200px;
+
+}
+
+.has-notic {
+    background: url(../../images/student/notic_1.png) no-repeat center;
+    width: 20px;
+    height: 25px;
+    display: inline-block;
+    top: 5px;
+    position: relative;
+}
+
+.no-notic {
+    background: url("../../images/student/notic_0.png") no-repeat center;
+    width: 17px;
+    height: 21px;
+    display: inline-block;
+    top: 5px;
+    position: relative;
+}
+
+.user-avatar {
+    /*background: url(../../images/home/avatar.png) no-repeat center;*/
+    width: 48px;
+    height: 48px;
+    top: 7px;
+    position: absolute;
+    background-size: cover;
+    left: 40px;
+    border-radius: 48px;
+}
+.g-user-info{
+    width: 308px;
+    height: 306px;
+    background: #ffffff;
+    position: absolute;
+    right: -20px;
+    top: 120%;
+    /* visibility: hidden; */
+    box-shadow: 0 4px 8px 0 rgba(7,17,27,.2);
+    z-index: 1000;
+    color: #000000;
+}
+.border-red-radius{
+    border:3px solid #FF0000;
+    border-radius: 48px;
+}
+.g-user-info .user-info{
+    height: 70px;
+}
+.g-user-info .user-info .user-avatar{
+    background: url(../../images/home/avatar.png) no-repeat center;
+    width: 68px;
+    height: 68px;
+    position: absolute;
+    background-size: cover;
+    left: 20px;
+}
+.g-user-info .user-info .user-name{
+    position: absolute;
+    left: 103px;
+}
+.g-user-info .user-info .user-email{
+    position: absolute;
+    left: 103px;
+    top: 25px;
+}
+.g-user-info .my-menu{
+    height: 160px;
+    margin-top: 10px;
+}
+.g-user-info .my-menu li{
+    width: 126px;
+    height: 36px;
+    float: left;
+    margin-left: 16px;
+    margin-top: 10px;
+    text-align: center;
+    line-height: 36px;
+    border: 1px solid #f4f5f7;
+}
+.g-user-info .my-menu a:hover{
+    color: #000000;
+}
+
+.g-user-info .my-menu li:hover{
+    background-color: #e2f1e8;
+    border: solid 1px #42c071;
+}
+.g-user-info .menu-footer{
+    border-top: 1px solid #eee;
+    width: 268px;
+    margin: 0 auto;
+}
+.g-user-info .menu-footer a{
+    float: right;
+}
+.g-user-info .menu-footer a:hover{
+    color: #FF0000;
+}
+.sp
+{
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border-top: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-bottom: 20px solid white;
+    border-left: 20px solid transparent;
+    top: -29px;
+    right: 10px;
+}
+
+.td-white-1{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@font-face {
+    font-family: 'Taidii';
+    src: url('/font/icomoon.eot');
+    src: url('/font/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('/font/icomoon.woff') format('woff'),
+    url('/font/icomoon.ttf') format('truetype'),
+    url('/font/icomoon.svg#Taidii') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

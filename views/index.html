@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>面试官首页</title>
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="static/CSS/style-slick.css">
+    <link rel="stylesheet" type="text/css" href="static/CSS/style-slick-theme-index.css">
+    <link rel="stylesheet" type="text/css" href="static/CSS/style-index.css">
+    <link rel="stylesheet" type="text/css" href="static/CSS/style-aos.css">
+
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body data-aos-easing="ease" data-aos-duration="1200" data-aos-delay="100" rlt="1" >
+    {{template "tpl-nav.html" .}}
+    <i class="icon icon__menu" id="js_menu"></i>
+    <div class="full__row">
+        <div id="siri-container"><canvas width="1280" height="500" style="width: 1280px; height: 500px;"></canvas></div>
+        <div class="container row">
+            <div class="advantage row-valign part-9">
+                <div class="advantage__show valign col-6">
+                    <div class="advantage__show__item">
+                        <div class="carousel__box">
+                            <img class="auto__img fadeInImg" id="js_carousel_img" src="static/images/12.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="valign col-6">
+                    <div class="carousel__info">
+                        <div>四大功能轻松体验</div>
+                        <div class="carousel__info__box">
+                            <span class="carousel__info__text"></span>
+                            <span id="js_carousel_text" class="carousel__info__text" style="transform: translateY(-60px);">
+                                    <strong>☼ 面对面面试</strong>
+                                    <strong>☼ 视频模拟</strong>
+                                    <strong>☼ 海量题库</strong>
+                                    <strong>☼ 简历制作</strong></span>
+                        </div>
+                        <a href="/sign" class="btn btn__gradient"><span>注册立即体验</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full__row advantage__items">
+        <div class="container row">
+            <div class="part-9">
+                <div class="col-12">
+                    <div id="js_notice" class="notice border-gradient fadeInNotice">
+                        <div class="notice__content">
+                            <strong id="notice_title">产品更新</strong>
+                            <div class="notice__content__box" id="js_carousel_notice">
+                                <span id="notice_content"><a href="" target="_blank">1.0版已发布，快去体验吧！</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="part-9">
+                <div class="advantage__items__box">
+                    <div class="advantage__item col-3 row-valign">
+                        <div class="valign">
+                            <i class="icon icon__price"></i>
+                        </div>
+                        <div class="valign">
+                            <strong>双向交流</strong>
+                            <p>分隔两地，面对面视频交流</p>
+                        </div>
+                    </div>
+                    <div class="advantage__item col-3 row-valign">
+                        <div class="valign">
+                            <i class="icon icon__price"></i>
+                        </div>
+                        <div class="valign">
+                            <strong>模拟练习</strong>
+                            <p>视频上传与回放</p>
+                        </div>
+                    </div>
+                    <div class="advantage__item col-3 row-valign">
+                        <div class="valign">
+                            <i class="icon icon__simple"></i>
+                        </div>
+                        <div class="valign">
+                            <strong>刷题</strong>
+                            <p>知识点分类详细</p>
+                        </div>
+                    </div>
+                    <div class="advantage__item col-3 row-valign">
+                        <div class="valign">
+                            <i class="icon icon__platform"></i>
+                        </div>
+                        <div class="valign">
+                            <strong>高质量简历</strong>
+                            <p>10 分钟出 Demo</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container quality" >
+        <div class="quality__info">
+            <div class="cover__count"></div>
+            <h3 class="">求职两道门槛：笔试和面试。</h3>
+            <p class="quality__info__desc">“笔试”需要求职者拥有较强的专业知识储备，而面试却是考验求职者的各种综合能力，比如口才、心理素质、观察力等等。</p>
+            <p class="quality__info__desc">现实中很多求职者的应聘都失败在面试环节，而很多的招聘单位也因此招不到优秀的人才。</p>
+            <p class="btn__try"><a href="" target="_blank">了解更多 &gt;</a></p>
+        </div>
+
+        <div class="earth__show">
+            <svg class="circle__box" id="js_quality_animation" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <radialgradient id="gradient" cx="0%" cy="0%" r="70%">
+                            <stop offset="0%" style="stop-color: #03CFB5;"></stop>
+                            <stop offset="100%" style="stop-color: #1C81F7;"></stop>
+                        </radialgradient>
+                    </defs>
+                    <circle class="circle__inner" cx="640" cy="341" r="428" style="opacity: 0.016092;" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle class="circle__middle" cx="640" cy="341" r="223" style="opacity: 0.487356;" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle class="circle__outer" cx="640" cy="341" r="325" style="opacity: 0.252874;" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                </svg>
+        </div>
+        <div class="quality__items row">
+            <div class="part-8">
+                <div class="quality__item col-3">
+                    <strong>能力储备站</strong>
+                </div>
+                <div class="quality__item col-3">
+                    <strong>提高应试能力</strong>
+                </div>
+                <div class="quality__item col-3">
+                    <strong>个人形象塑造</strong>
+                </div>
+                <div class="quality__item col-3">
+                    <strong>出彩简历</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full__row" style="background: linear-gradient(90deg, #03D2B3 0, #2181FB 80%, #2181FB 100%);">
+        <div class="chart__show__box aos-init" data-aos="fade-up"></div>
+        <div class="container chart__show row">
+            <div class="part-12">
+                <div class="col-4">
+                    <h3>最新资讯</h3>
+                    <p class="chart__show__desc"> 把头靠过来一点，这样方便我跟你讲话，最好再近一点嗯嗯，这样学习前端才最靠谱，哈，开个玩笑。</p>
+                    <p class="btn__try"><a href="" target="_blank">查看更多资讯 &gt;</a></p>
+                </div>
+                <div class="col-8">
+                    <div class="code__show">
+                        <div class="code__show__tabs">
+                            <span class="code__show__tab code__show-active">4/30</span> |
+                            <span class="code__show__tab">4/2</span> |
+                            <span class="code__show__tab">3/28</span> |
+                            <span class="code__show__tab">1/2</span> |
+                            <span class="code__show__tab">...</span>
+                        </div>
+                        <div class="code__show__items">
+                            <div class="code__show__item">
+                                <pre>
+                                        <span class="code-green">国际买家之手伸入研发前端</span> 
+        【本报讯】以往，一些国际买家来中国采购，青睐选择低价供应商。而在近日由环球资源举办的
+电子媒体播放器“买家专场采购会”上，多个全球顶级零售巨头向记者亮出的采购标准则是，并非
+专为低价产品买单，而是在品质、社会责任等要求获得满足前提下，再去掂量产品价格...
+                                    </pre>
+                            </div>
+                            <div class="code__show__item hide">
+                                <pre>
+                                        <span class="code-blue">开放才能进步！Angular和Wijmo一起走过的日子</span>
+        Angular已成为广受欢迎的前端框架。去年9月份，期待已久的Angular2的正式版发布之后，Angular
+又迎来了新一轮热潮。伴随着Angular这一路走来，Wijmo一直都是第一个全面支持各种版本Angular的
+JS控件库...
+                                    </pre>
+                            </div>
+                            <div class="code__show__item hide">
+                                <pre>
+                                        <span class="code-yellow">支付宝AR抢红包？前端轻松就破解~</span>
+        近期阿里搞了各LBS+AR实景的红包玩法，小伙伴们在公司里都玩疯了~ 
+有时候为了抢一个红包，会跑到另一个地方去拍照，虽然略麻烦，但整体的互动还是很有意思的。
+不过对于机智的前端童鞋来说，只需要简单的一段代码就能破解AR红包（当然成功率也不是100%）...
+                                    </pre>
+                            </div>
+                            <div class="code__show__item hide">
+                                <pre>
+                                        <span class="code-purple">2016 年 10 个最佳的 CodePen 作品</span> 
+          年终盘点向来是各大网站、社区的重头戏。当然，与往年一样 CodePen 也出了期名为《The Most 
+Hearted of 2016》的专题。专题中盘点了 2016 年 100 个最受欢迎的 Pens，让我们在惊叹前端开发者创造
+力的同时，也能够学习一些新的技术，捕捉一些新的想法...                           
+                                    </pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container row sdk__monitor">
+        <div class="row__valign part-11">
+            <div class="col-6 valign">
+                <div class="sdk__monitor__media aos-init" data-aos="fade-right">
+                    <img class="auto__img" src="static/images/ITer.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-6 valign">
+                <div class="sdk__monitor__info el__center-480">
+                    <h3 class="">针对人群</h3>
+                    <ul class="video__custom__list">
+                        <li>· 即将毕业的大学生</li>
+                        <li>· IT待业人员</li>
+                        <li>
+                            <p class="btn__try"><a href="register.html">注册体验 &gt;</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full__row customers">
+        <div class="container customers__evaluation">
+            <i class="icon icon__arraw-left"></i>
+            <i class="icon icon__arraw-right"></i>
+            <div class="customers__box">
+                <span class="customer__item"><img src="static/images/xiaomi_white.png" alt=""></span>
+                <span class="customer__item"><img src="static/images/momo_white.png" alt=""></span>
+                <span class="customer__item"><img src="static/images/talkspace_white.png" alt=""></span>
+                <span class="customer__item"><img src="static/images/haoweilai_white.png" alt=""></span>
+                <span class="customer__item"><img src="static/images/tuniu_white.png" alt=""></span>
+                <span class="customer__item"><img src="static/images/yunzhijia_white.png" alt=""></span>
+                <span class="customer__item"><img src="static/images/haier_white.png" alt=""></span>
+                <span class="customer__item"><img src="static/images/levr_white.png" alt=""></span>
+            </div>
+            <div class="col-12">
+                <p class="more__evaluation"><a href="" target="_blank">更多合作企业 &gt;</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="full__row serve">
+        <div class="serve__info container">
+            <p>通过我们的网站成功求职的案例</p>
+            <p>已经超过了<strong class="pictos" id="js_user_number"></strong>例</p>
+            <p><a href="register.html" class="btn btn__gradient"><span>立即注册</span></a></p>
+        </div>
+        <div class="serve__wave">
+            <svg class="circle__box" id="js_serve_animation" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="serve__circle__item serve__circle__item1" cx="170" cy="150" r="10" fill="#2893EF"></circle>
+                    <circle class="serve__circle__item serve__circle__item1 serve__circle__middle" cx="170" cy="150" r="10" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle class="serve__circle__item serve__circle__item1 serve__circle__outer" cx="170" cy="150" r="10" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle class="serve__circle__item serve__circle__item2" cx="500" cy="105" r="10" fill="#2893EF"></circle>
+                    <circle class="serve__circle__item serve__circle__item2 serve__circle__middle" cx="500" cy="105" r="10" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle class="serve__circle__item serve__circle__item2 serve__circle__outer" cx="500" cy="105" r="10" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle class="serve__circle__item serve__circle__item3" cx="790" cy="100" r="10" fill="#2893EF"></circle>
+                    <circle class="serve__circle__item serve__circle__item3 serve__circle__middle" cx="790" cy="100" r="10" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle class="serve__circle__item serve__circle__item3 serve__circle__outer" cx="790" cy="100" r="10" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle class="serve__circle__item serve__circle__item4" cx="760" cy="320" r="10" fill="#2893EF"></circle>
+                    <circle class="serve__circle__item serve__circle__item4 serve__circle__middle" cx="760" cy="320" r="10" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                    <circle class="serve__circle__item serve__circle__item4 serve__circle__outer" cx="760" cy="320" r="10" stroke-width="1" stroke="url(#gradient)" fill="none"></circle>
+                </svg>
+        </div>
+    </div>
+     {{template "tpl-footer.html" .}}
+    
+   
+   
+       <script src="static/JS/hm.js"></script>
+        <script charset="utf-8" src="static/JS/v.js"></script>
+        <script async="" src="static/JS/analytics.js"></script>
+        <script src="static/JS/jquery.min.js"></script>
+        <script src="static/JS/common.js"></script>
+        <script src="static/JS/cookie.js"></script>
+        <script src="static/JS/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200,
+            delay: 100,
+        })
+    </script>
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+        (function(i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r;
+            i[r] = i[r] || function() {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date();
+            a = s.createElement(o), m = s.getElementsByTagName(o)[0];
+            a.async = 1;
+            a.src = g;
+            m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '', 'ga');
+        ga('create', 'UA-76402370-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="static/JS/slick.min.js"></script>
+    <script src="static/JS/siriwave.js"></script>
+    <script>
+        var animationFlag = false;
+
+        function coverMapAnimation(minRadius, maxRadius, interval) {
+            $(".serve__circle__item").each(function(index, circle) {
+                if (index % 3) {
+                    var $circle = $(circle);
+                    r = $circle.attr("r");
+                    r++;
+                    if (r >= maxRadius) {
+                        r = minRadius;
+                    }
+                    $circle.attr("r", r);
+                    var opacity = (maxRadius - r) / maxRadius;
+                    $circle.css("opacity", opacity);
+                }
+            });
+            if (!animationFlag) return;
+            setTimeout(function() {
+                coverMapAnimation(minRadius, maxRadius, interval);
+            }, interval);
+        }
+
+        function startCoverMapAnimation() {
+            var minR = 10;
+            var maxR = 100;
+            var interval = 30;
+            $("#js_serve_animation circle").each(function(index, circle) {
+                var $circle = $(circle);
+                var thisIndex = index % 3;
+                if (thisIndex) {
+                    var r = minR + (maxR - minR) / 2 * thisIndex;
+                    $circle.attr("r", r);
+                    $circle.css("opacity", 1);
+                    var opacity = (maxR - r) / maxR;
+                    $circle.css("opacity", opacity);
+                }
+            });
+            var count = 1;
+            clearInterval(animationFlag);
+            $("#js_serve_animation").find('.serve__circle__item').fadeOut();
+            $("#js_serve_animation").find('.serve__circle__item' + count).fadeIn();
+            animationFlag = setInterval(function() {
+                $("#js_serve_animation").find('.serve__circle__item').fadeOut();
+                count = count % 4;
+                count++;
+                $("#js_serve_animation").find('.serve__circle__item' + count).fadeIn();
+            }, 3000);
+            coverMapAnimation(minR, maxR, interval);
+        }
+
+        function stopCoverMapAnimation() {
+            clearInterval(animationFlag);
+            animationFlag = null;
+        }
+        $(function() {
+            function startCoverMapByScroll() {
+                var scrollTop = $(this).scrollTop();
+                var elemTop = $("#js_serve_animation").position().top;
+                if (scrollTop > elemTop - $(window).height()) {
+                    if (!animationFlag) {
+                        countToNumber($('#js_user_number'), 10, '', 2000);
+                        startCoverMapAnimation();
+                    }
+                } else {
+                    if (animationFlag) {
+                        stopCoverMapAnimation();
+                    }
+                }
+            }
+            $(window).on('scroll', startCoverMapByScroll);
+            startCoverMapByScroll();
+
+            // $('.customer__item img').hover(
+            //     function() {
+            //         var oldSrc = $(this).attr('src'),
+            //             newSrc = $(this).data('src');
+            //         $(this).attr('src', newSrc);
+            //         $(this).data('src', oldSrc);
+            //     },
+            //     function() {
+            //         var oldSrc = $(this).attr('src'),
+            //             newSrc = $(this).data('src');
+            //         $(this).attr('src', newSrc);
+            //         $(this).data('src', oldSrc);
+            //     }
+            // )
+        });
+        $(".slick-wrapper").slick({
+            dots: false,
+            arrows: false,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 3500,
+            adaptiveHeight: true
+        });
+        $(".customer__item").each(function(index, elem) {
+            $(elem).on("click", function() {
+                console.log(index);
+                $(".slick-wrapper").slick("goTo", index);
+            })
+        });
+        $(".icon__arraw-left").on("click", function() {
+            $(".slick-wrapper").slick("slickPrev");
+        });
+        $(".icon__arraw-right").on("click", function() {
+            $(".slick-wrapper").slick("slickPrev");
+        });
+
+        var circleAnimationTimer;
+
+        function playCircleAnimation(minRadius, maxRadius) {
+            $("#js_quality_animation circle").each(function(index, circle) {
+                var $circle = $(circle);
+                var r = $circle.attr("r");
+                r++;
+                if (r >= maxRadius) {
+                    r = minRadius;
+                }
+                $circle.attr("r", r);
+                var opacity = (maxRadius - r) / maxRadius;
+                $circle.css("opacity", opacity);
+            });
+        }
+
+        function adjustCirclePosition() {
+            $("#js_quality_animation circle").each(function(index, circle) {
+                var $circle = $(circle);
+                var left = parseInt($(".quality").width() / 2);
+                $circle.attr("cx", left);
+                var top = parseInt($(".earth__show").position().top + $(".earth__show").height() / 2);
+                $circle.attr("cy", top);
+            });
+        }
+
+        function startPlayCircleAnimation() {
+            var minR = 128;
+            var maxR = 435;
+            var interval = 10;
+            $("#js_quality_animation circle").each(function(index, circle) {
+                var $circle = $(circle);
+                // set initial wave radius
+                var r = minR + (maxR - minR) / 3 * index;
+                $circle.attr("r", r);
+                var opacity = (maxR - r) / maxR;
+                $circle.css("opacity", opacity);
+                adjustCirclePosition();
+            });
+            clearInterval(circleAnimationTimer);
+            circleAnimationTimer = setInterval(playCircleAnimation.bind(this, minR, maxR), interval);
+        }
+
+        function stopPlayCircleAnimation() {
+            clearInterval(circleAnimationTimer);
+            circleAnimationTimer = null;
+        }
+        $(function() {
+            function startPlayCircleAnimationByScroll() {
+                adjustCirclePosition();
+                var scrollTop = $(window).scrollTop();
+                var elemTop = $("#js_quality_animation").position().top;
+                if (scrollTop + $(window).height() - elemTop > 0 && scrollTop - $("#js_quality_animation").height() - elemTop < 0) {
+                    if (!circleAnimationTimer) {
+                        startPlayCircleAnimation()
+                    }
+                } else {
+                    if (circleAnimationTimer) {
+                        stopPlayCircleAnimation();
+                    }
+                }
+
+                //var elemNotice = $('#js_notice');
+                //if (scrollTop >= 300 && !elemNotice.hasClass('fadeInNotice')) {
+                //    elemNotice.addClass('fadeInNotice');
+                //}
+            }
+            $(window).on('scroll', startPlayCircleAnimationByScroll);
+            $(window).on('resize', startPlayCircleAnimationByScroll);
+        });
+
+        var countToNumber = function(element, number, suffix, duration) {
+            $({
+                count: parseInt(element.text().split("+")[0].replace(/\,/g, ''))
+            }).animate({
+                count: number
+            }, {
+                duration: duration ? duration : 1000,
+                easing: 'swing',
+                step: function(now) {
+                    element.text((Math.floor(now) + suffix).replace(/(\d)(?=(\d\d\d)+(?!\d))/g, "$1,"));
+                },
+                complete: function() {
+                    countingFromZero = false;
+                }
+            });
+        };
+
+        var SW = new SiriWave({
+            width: 1280,
+            height: 500,
+            ratio: 1,
+            speed: 0.006,
+            amplitude: 0.6,
+            color: '#1B8EF3',
+            container: document.getElementById('siri-container'),
+            autostart: true,
+        });
+        carouselText($('#js_carousel_text'), $('#js_carousel_text').find('strong'), 60);
+        carouselImg({
+            container: $('#js_carousel_img'),
+            data: ['static/images/3.jpg',
+                'static/images/4.jpg',
+                'static/images/9.jpg',
+                'static/images/10.jpg',
+                'static/images/12.jpg'
+            ],
+            className: 'fadeInImg'
+        });
+        // carouselImg({
+        //     container: $('#js_notice'),
+        //     className: 'fadeInNotice'
+        // });
+
+        var noticeDataUrl = "" +
+            (/^(www\.)?\.io/.test(window.location.host) ? "notice_cn_www_index_production" : "notice_cn_www_index_staging") + ".json"
+        $.getJSON(noticeDataUrl, function(data) {
+            if (data && data.data && data.data.latest) {
+                var latest = data.data.latest;
+                $("#notice_title").html(latest.title);
+                $("#notice_content").html(latest.content);
+                setTimeout(function() {
+                    $("#js_notice").addClass("fadeInNotice");
+                }, 0);
+            }
+        });
+
+        //carouselText($('#js_carousel_notice'), $('#js_carousel_notice').find('span'), 33);
+    </script>
+</body>
+
+</html>

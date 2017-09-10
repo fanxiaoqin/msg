@@ -1,0 +1,101 @@
+.register-box .layui-input {
+	width: 285px;
+	border-radius: 4px
+}
+
+.register-box .layui-form-label {
+	padding-left: 50px;
+	padding-right:0px;
+}
+
+.register-box .layui-form-item {
+	margin-bottom: 0px
+}
+.register-box .layui-form-mid{
+	padding: 9px 0;
+	padding-left: 150px;
+}
+
+
+.register-box {
+	width: 511px;
+	height: 472px;
+	margin: 0 auto;
+}
+.register-box .error-tips {
+	height: 30px;
+	line-height: 30px;
+    color: #ff0000;
+	font-size: 12px;
+}
+.register-title {
+	margin: 0 auto;
+	width: 440px;
+	height: 50px;
+	line-height: 50px;	
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+}
+.register-btn {
+	width: 200px;
+	height: 40px;
+	background-color: #43cf76;
+	margin-left: 70px;
+	float: left
+}
+.goto-login{
+	float: left;
+	margin-left: 39px
+}
+.register-footer{
+	line-height: 40px
+}
+
+.register-banner {
+	width: 100%;
+	height: 88px;
+	background: url('../../images/student/base_avatar.png') no-repeat center;
+	margin-top: 100px;
+	margin-bottom: 40px
+}
+.registerSuccess-tip,
+.register-mailTip,
+.receive-q,
+.mailVertify {
+	width: 100%;
+	text-align: center;
+} 
+.registerSuccess-tip{
+	margin-bottom: 20px
+}
+.register-mailTip{
+	margin-bottom: 40px
+}
+.mailVertify{
+	margin-bottom: 20px
+}
+.mailVertify-btn {
+	width: 210px;
+	height: 50px;
+	margin-right: 20px
+}
+.button-white{
+	border: 1px solid #aaa
+}
+.registerSuccess-box{
+	width: 514px;
+	height: 400px;
+	margin: 0 auto;
+}
+.base-code {
+    width: 100px;
+    position: absolute;
+    top: 0px;
+    left: 150px;
+}
+.register-box .agreement {
+	padding-left: 145px;
+	font-size: 10px;
+	margin-bottom: 20px;
+	color: #999999;
+}
